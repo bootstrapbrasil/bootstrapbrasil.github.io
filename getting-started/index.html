@@ -151,33 +151,35 @@
   <h2 id="download-npm">Instalação com npm</h2>
   <p>Você pode tambem instalar o Bootstrap usando <a href="https://www.npmjs.com">npm</a>:</p>
   <div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>npm install bootstrap</code></pre></div>
-  <p><code>require('bootstrap')</code> will load all of Bootstrap's jQuery plugins onto the jQuery object. The <code>bootstrap</code> module itself does not export anything. You can manually load Bootstrap's jQuery plugins individually by loading the <code>/js/*.js</code> files under the package's top-level directory.</p>
-  <p>Bootstrap's <code>package.json</code> contains some additional metadata under the following keys:</p>
+  <p><code>require('bootstrap')</code> vai carregar todos os plugins jQuery do Bootstrap plugins no jQuery object. O próprio modulo <code>bootstrap</code> não exporta nada. Você pode carregar manualmente plugins jQuery do Bootstrap individualmente atráves do carregamento dos arquivos <code>/js/*.js</code>sob o diretório de nível superior do pacote.</p>
+  <p>O <code>package.json</code> do Bootstrap contém alguns metadados adicionais nas seguintes keys:</p>
   <ul>
-    <li><code>less</code> - path to Bootstrap's main <a href="http://lesscss.org">Less</a> source file</li>
-    <li><code>style</code> - path to Bootstrap's non-minified CSS that's been precompiled using the default settings (no customization)</li>
+    <li><code>less</code> - caminho para o arquivo principal <a href="http://lesscss.org">Less</a> do Bootstrap</li>
+    <li><code>style</code> - caminho para CSS não minificado do Bootstrap, que foram pré-compilados usando as configurações padrão (sem personalização)</li>
   </ul>
 
   <h2 id="download-composer">Instalação com Composer</h2>
   <p>Você pode tambem instalar e manusear o Less, CSS, JavaScript e fonts do Bootstrap usando <a href="https://getcomposer.org">Composer</a>:</p>
   <div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>composer require twbs/bootstrap</code></pre></div>
 
-  <h2 id="download-autoprefixer">Autoprefixer required for Less/Sass</h2>
-  <p>Bootstrap uses <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> to deal with <a href="http://webdesign.about.com/od/css/a/css-vendor-prefixes.htm">CSS vendor prefixes</a>. If you're compiling Bootstrap from its Less/Sass source and not using our Gruntfile, you'll need to integrate Autoprefixer into your build process yourself. If you're using precompiled Bootstrap or using our Gruntfile, you don't need to worry about this because Autoprefixer is already integrated into our Gruntfile.</p>
+  <h2 id="download-autoprefixer">Less/Sass requer Autoprefixer</h2>
+  <p>Bootstrap usa <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> para trabalhar com <a href="http://webdesign.about.com/od/css/a/css-vendor-prefixes.htm">CSS vendor prefixes</a>. Se você está compilando o Less/Sass do Bootstrap e não está usando o nosso Gruntfile, então você precisa do Autoprefixer para integrar seu processo de construção. Se você estiver usando Bootstrap pré-compilado ou usando o nosso Gruntfile, você não precisa se preocupar com isso porque o Autoprefixer já está integrado no nosso Gruntfile.</p>
 </div>
 
-<div class="bs-docs-section">
-  <h1 id="whats-included" class="page-header">What's included</h1>
 
-  <p class="lead">Bootstrap is downloadable in two forms, within which you'll find the following directories and files, logically grouping common resources and providing both compiled and minified variations.</p>
+
+<div class="bs-docs-section">
+  <h1 id="whats-included" class="page-header">O que está incluso</h1>
+
+  <p class="lead">Bootstrap está disponível para download em duas formas, no qual você encontrará os seguintes diretórios e arquivos, agrupando logicamente recursos comuns e fornecendo ambas as variações: compilados e minificados.</p>
 
   <div class="bs-callout bs-callout-warning" id="jquery-required">
-    <h4>jQuery required</h4>
-    <p>Please note that <strong>all JavaScript plugins require jQuery</strong> to be included, as shown in the <a href="#template">starter template</a>. <a href="https://github.com/twbs/bootstrap/blob/v3.3.5/bower.json">Consult our <code>bower.json</code></a> to see which versions of jQuery are supported.</p>
+    <h4>jQuery obrigatório</h4>
+    <p>Por favor, note que <strong>todos plugins JavaScript necessitam do jQuery</strong> para serem incluídos, como mostrado no <a href="#template">template de partida</a>. <a href="https://github.com/twbs/bootstrap/blob/v3.3.5/bower.json">Consulte nosso <code>bower.json</code></a> para ver quais versões do jQuery são suportados.</p>
   </div>
 
-  <h2 id="whats-included-precompiled">Precompiled Bootstrap</h2>
-  <p>Once downloaded, unzip the compressed folder to see the structure of (the compiled) Bootstrap. You'll see something like this:</p>
+  <h2 id="whats-included-precompiled">Bootstrap pré-compilado</h2>
+  <p>Feito o download, descompacte a pasta compactada para ver a estrutura do Bootstrap (o compilado). Você verá algo parecido com isto:</p>
 <!-- NOTE: This info is intentionally duplicated in the README.
 Copy any changes made here over to the README too. -->
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">bootstrap/
@@ -201,10 +203,10 @@ Copy any changes made here over to the README too. -->
     └── glyphicons-halflings-regular.woff2</code></pre></div>
 <!-- NOTE: This info is intentionally duplicated in the README.
 Copy any changes made here over to the README too. -->
-  <p>This is the most basic form of Bootstrap: precompiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and JS (<code>bootstrap.*</code>), as well as compiled and minified CSS and JS (<code>bootstrap.min.*</code>). CSS <a href="https://developer.chrome.com/devtools/docs/css-preprocessors">source maps</a> (<code>bootstrap.*.map</code>) are available for use with certain browsers' developer tools. Fonts from Glyphicons are included, as is the optional Bootstrap theme.</p>
+  <p>Esta é a forma mais básica de Bootstrap: arquivos pré-compilados, caí como uma luva para quase qualquer um projeto web. Nós fornecemos CSS e JS compilados (<code>bootstrap.*</code>), assim como CSS e JS compilados e minificados (<code>bootstrap.min.*</code>). CSS <a href="https://developer.chrome.com/devtools/docs/css-preprocessors">source maps</a> (<code>bootstrap.*.map</code>) estão disponíveis para uso com ferramentas de desenvolvimento em determinados navegadores. Fonts Glyphicons estão incluídos, assim como o tema Bootstrap opcional.</p>
 
-  <h2 id="whats-included-source">Bootstrap source code</h2>
-  <p>The Bootstrap source code download includes the precompiled CSS, JavaScript, and font assets, along with source Less, JavaScript, and documentation. More specifically, it includes the following and more:</p>
+  <h2 id="whats-included-source">Bootstrap código fonte</h2>
+  <p>O download do código fonte Bootstrap inclui o CSS, JavaScript pré-compilados e assets fonts, junto com o fonte do Less, JavaScripts e documentação. Mais precisamente, ele inclui algo assim:</p>
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">bootstrap/
 ├── less/
 ├── js/
@@ -215,7 +217,7 @@ Copy any changes made here over to the README too. -->
 │   └── fonts/
 └── docs/
     └── examples/</code></pre></div>
-  <p>The <code>less/</code>, <code>js/</code>, and <code>fonts/</code> are the source code for our CSS, JS, and icon fonts (respectively). The <code>dist/</code> folder includes everything listed in the precompiled download section above. The <code>docs/</code> folder includes the source code for our documentation, and <code>examples/</code> of Bootstrap usage. Beyond that, any other included file provides support for packages, license information, and development.</p>
+  <p>Os diretórios <code>less/</code>, <code>js/</code>, e <code>fonts/</code> incluí códigos fonte para nosso CSS, JS, e fonts ícones (respectivamente). O diretório <code>dist/</code> incluí tudo referente a sessão de download pré-compilado sozinho. O diretório <code>docs/</code> incluí o código fonte da documentação, com exemplos de uso em <code>examples/</code>. Além disso, qualquer outro arquivo incluído fornece suporte para pacotes, informações de licença e desenvolvimento.</p>
 </div>
 
 <div class="bs-docs-section">
