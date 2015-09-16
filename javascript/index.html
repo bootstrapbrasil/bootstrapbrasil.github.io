@@ -126,14 +126,14 @@
       <div class="row">
         <div class="col-md-9" role="main">
           <div class="bs-docs-section">
-  <h1 id="js-overview" class="page-header">Overview</h1>
+  <h1 id="js-overview" class="page-header">Visão geral</h1>
 
-  <h2 id="js-individual-compiled">Individual or compiled</h2>
-  <p>Plugins can be included individually (using Bootstrap's individual <code>*.js</code> files), or all at once (using <code>bootstrap.js</code> or the minified <code>bootstrap.min.js</code>).</p>
+  <h2 id="js-individual-compiled">Individual ou compilado</h2>
+  <p>Plugins podem ser inclusos individualmente (através de arquivos <code>*.js</code> individuais do Bootstrap), ou de uma única vez (usando <code>bootstrap.js</code> ou a versão minificada/comprimida <code>bootstrap.min.js</code>).</p>
 
   <div class="bs-callout bs-callout-danger" id="callout-overview-not-both">
-    <h4>Using the compiled JavaScript</h4>
-    <p>Both <code>bootstrap.js</code> and <code>bootstrap.min.js</code> contain all plugins in a single file. Include only one.</p>
+    <h4>Usando JavaScript compilado</h4>
+    <p>Tanto <code>bootstrap.js</code> quanto <code>bootstrap.min.js</code> possuem todos os plugins. Use apenas um.</p>
   </div>
 
   <div class="bs-callout bs-callout-danger" id="callout-overview-dependencies">
@@ -166,16 +166,16 @@
 
   <p>Each plugin also exposes its raw constructor on a <code>Constructor</code> property: <code>$.fn.popover.Constructor</code>. If you'd like to get a particular plugin instance, retrieve it directly from an element: <code>$('[rel="popover"]').data('popover')</code>.</p>
 
-  <h4>Default settings</h4>
+  <h4>Configurações padrão</h4>
   <p>You can change the default settings for a plugin by modifying the plugin's <code>Constructor.DEFAULTS</code> object:</p>
 <div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">modal</span><span class="p">.</span><span class="nx">Constructor</span><span class="p">.</span><span class="nx">DEFAULTS</span><span class="p">.</span><span class="nx">keyboard</span> <span class="o">=</span> <span class="kc">false</span> <span class="c1">// changes default for the modal plugin's `keyboard` option to false</span></code></pre></div>
 
-  <h2 id="js-noconflict">No conflict</h2>
+  <h2 id="js-noconflict">Sem conflito</h2>
   <p>Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call <code>.noConflict</code> on the plugin you wish to revert the value of.</p>
 <div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">bootstrapButton</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">button</span><span class="p">.</span><span class="nx">noConflict</span><span class="p">()</span> <span class="c1">// return $.fn.button to previously assigned value</span>
 <span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">bootstrapBtn</span> <span class="o">=</span> <span class="nx">bootstrapButton</span>            <span class="c1">// give $().bootstrapBtn the Bootstrap functionality</span></code></pre></div>
 
-  <h2 id="js-events">Events</h2>
+  <h2 id="js-events">Eventos</h2>
   <p>Bootstrap provides custom events for most plugins' unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. <code>show</code>) is triggered at the start of an event, and its past participle form (ex. <code>shown</code>) is triggered on the completion of an action.</p>
   <p>As of 3.0.0, all Bootstrap events are namespaced.</p>
   <p>All infinitive events provide <code>preventDefault</code> functionality. This provides the ability to stop the execution of an action before it starts.</p>
@@ -183,7 +183,7 @@
   <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">data</span><span class="p">)</span> <span class="k">return</span> <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span> <span class="c1">// stops modal from being shown</span>
 <span class="p">})</span></code></pre></div>
 
-  <h2 id="js-version-nums">Version numbers</h2>
+  <h2 id="js-version-nums">Números de versões</h2>
   <p>The version of each of Bootstrap's jQuery plugins can be accessed via the <code>VERSION</code> property of the plugin's constructor. For example, for the tooltip plugin:</p>
 <div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">tooltip</span><span class="p">.</span><span class="nx">Constructor</span><span class="p">.</span><span class="nx">VERSION</span> <span class="c1">// =&gt; "3.3.5"</span></code></pre></div>
 
@@ -199,13 +199,13 @@
 <div class="bs-docs-section">
   <h1 id="transitions" class="page-header">Transitions <small>transition.js</small></h1>
 
-  <h2>About transitions</h2>
+  <h2>Sobre transições</h2>
   <p>For simple transition effects, include <code>transition.js</code> once alongside the other JS files. If you're using the compiled (or minified) <code>bootstrap.js</code>, there is no need to include this&mdash;it's already there.</p>
 
-  <h2>What's inside</h2>
+  <h2>Seu conteúdo</h2>
   <p>Transition.js is a basic helper for <code>transitionEnd</code> events as well as a CSS transition emulator. It's used by the other plugins to check for CSS transition support and to catch hanging transitions.</p>
 
-  <h2>Disabling transitions</h2>
+  <h2>Desabilitando transições</h2>
   <p>Transitions can be globally disabled using the following JavaScript snippet, which must come after <code>transition.js</code> (or <code>bootstrap.js</code> or <code>bootstrap.min.js</code>, as the case may be) has loaded:</p>
 <div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">.</span><span class="nx">support</span><span class="p">.</span><span class="nx">transition</span> <span class="o">=</span> <span class="kc">false</span></code></pre></div>
 </div>
@@ -232,9 +232,9 @@
   <span class="nx">$</span><span class="p">(</span><span class="s1">'#myInput'</span><span class="p">).</span><span class="nx">focus</span><span class="p">()</span>
 <span class="p">})</span></code></pre></div>
 
-  <h2 id="modals-examples">Examples</h2>
+  <h2 id="modals-examples">Exemplos</h2>
 
-  <h3>Static example</h3>
+  <h3>Exemplo estático</h3>
   <p>A rendered modal with header, body, and set of actions in the footer.</p>
   <div class="bs-example bs-example-modal" data-example-id="static-modal">
     <div class="modal">
@@ -318,12 +318,12 @@
 
   <div class="bs-example bs-example-padded-bottom">
     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-      Launch demo modal
+      Abrir modal de demonstração
     </button>
   </div><!-- /example -->
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Button trigger modal --&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#myModal"</span><span class="nt">&gt;</span>
-  Launch demo modal
+  Abrir modal de demonstração
 <span class="nt">&lt;/button&gt;</span>
 
 <span class="c">&lt;!-- Modal --&gt;</span>
@@ -346,17 +346,17 @@
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
   <div class="bs-callout bs-callout-warning" id="callout-modal-accessibility">
-    <h4>Make modals accessible</h4>
+    <h4>Torne os modais acessíveis</h4>
     <p>Be sure to add <code>role="dialog"</code> and <code>aria-labelledby="..."</code>, referencing the modal title, to <code>.modal</code>, and <code>role="document"</code> to the <code>.modal-dialog</code>  itself.</p>
     <p>Additionally, you may give a description of your modal dialog with <code>aria-describedby</code> on <code>.modal</code>.</p>
   </div>
 
   <div class="bs-callout bs-callout-info" id="callout-modal-youtube">
-    <h4>Embedding YouTube videos</h4>
+    <h4>Incorporando vídeos do YouTube</h4>
     <p>Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. <a href="https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal">See this helpful Stack Overflow post</a> for more information.</p>
   </div>
 
-  <h2 id="modals-sizes">Optional sizes</h2>
+  <h2 id="modals-sizes">Tamanhos opcionais</h2>
   <p>Modals have two optional sizes, available via modifier classes to be placed on a <code>.modal-dialog</code>.</p>
   <div class="bs-example">
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
@@ -414,13 +414,13 @@
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 
-  <h2 id="modals-remove-animation">Remove animation</h2>
+  <h2 id="modals-remove-animation">Remover animação</h2>
   <p>For modals that simply appear rather than fade in to view, remove the <code>.fade</code> class from your modal markup.</p>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"..."</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-  <h2 id="modals-grid-system">Using the grid system</h2>
+  <h2 id="modals-grid-system">Utilizando o sistema de grid</h2>
   <p>To take advantage of the Bootstrap grid system within a modal, just nest <code>.container-fluid</code> within the <code>.modal-body</code> and then use the normal grid system classes within this container.</p>
 <!-- sample modal content -->
   <div id="gridSystemModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel">
@@ -428,7 +428,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="gridModalLabel">Modal title</h4>
+          <h4 class="modal-title" id="gridModalLabel">Título do modal</h4>
         </div>
         <div class="modal-body">
           <div class="container-fluid">
@@ -459,15 +459,15 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Salvar modificações</button>
         </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 <div class="bs-example bs-example-padded-bottom">
   <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#gridSystemModal">
-    Launch demo modal
+    Abrir modal de demonstração
   </button>
 </div><!-- /example -->
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"gridSystemModalLabel"</span><span class="nt">&gt;</span>
@@ -600,7 +600,7 @@
   <p>Call a modal with id <code>myModal</code> with a single line of JavaScript:</p>
   <div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="nx">options</span><span class="p">)</span></code></pre></div>
 
-  <h3 id="modals-options">Options</h3>
+  <h3 id="modals-options">Opções</h3>
   <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-backdrop=""</code>.</p>
   <div class="table-responsive">
     <table class="table table-bordered table-striped js-options-table">
@@ -645,7 +645,7 @@
     </table>
   </div><!-- /.table-responsive -->
 
-  <h3 id="modals-methods">Methods</h3>
+  <h3 id="modals-methods">Métodos</h3>
 
   <h4><code>.modal(options)</code></h4>
   <p>Activates your content as a modal. Accepts an optional options <code>object</code>.</p>
@@ -670,7 +670,7 @@
   <p>Only needed when the height of the modal changes while it is open.</p>
   <div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">'handleUpdate'</span><span class="p">)</span></code></pre></div>
 
-  <h3 id="modals-events">Events</h3>
+  <h3 id="modals-events">Eventos</h3>
   <p>Bootstrap's modal class exposes a few events for hooking into modal functionality.</p>
   <p>All modal events are fired at the modal itself (i.e. at the <code>&lt;div class="modal"&gt;</code>).</p>
   <div class="table-responsive">
@@ -2609,7 +2609,7 @@ sagittis lacus vel augue laoreet rutrum faucibus."</span><span class="nt">&gt;</
     <li><a href="#callout-third-party-libs">Third-party libraries</a></li>
   </ul>
 </li>
-<li><a href="#transitions">Transitions</a></li>
+<li><a href="#transitions">Transições</a></li>
 <li>
   <a href="#modals">Modal</a>
   <ul class="nav">
@@ -2643,7 +2643,7 @@ sagittis lacus vel augue laoreet rutrum faucibus."</span><span class="nt">&gt;</
   </ul>
 </li>
 <li>
-  <a href="#tabs">Tab</a>
+  <a href="#tabs">Abas</a>
   <ul class="nav">
     <li><a href="#tabs-examples">Examples</a></li>
     <li><a href="#tabs-usage">Usage</a></li>
@@ -2681,7 +2681,7 @@ sagittis lacus vel augue laoreet rutrum faucibus."</span><span class="nt">&gt;</
   </ul>
 </li>
 <li>
-  <a href="#buttons">Button</a>
+  <a href="#buttons">Botões</a>
   <ul class="nav">
     <li><a href="#buttons-stateful">Stateful</a></li>
     <li><a href="#buttons-single-toggle">Single toggle</a></li>
@@ -2724,11 +2724,11 @@ sagittis lacus vel augue laoreet rutrum faucibus."</span><span class="nt">&gt;</
               
             </ul>
             <a class="back-to-top" href="#top">
-              Back to top
+              Voltar para o topo
             </a>
             
             <a href="#" class="bs-docs-theme-toggle" role="button">
-              Preview theme
+              Pré-visualizar tema
             </a>
             
           </nav>
