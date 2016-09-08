@@ -16,385 +16,385 @@
     
         {
             "title" : "Acessibilidade",
-            "url"   : "/getting-started/accessibility/"
+            "url"   : "/v4/getting-started/accessibility/"
         } ,
     
 
     
         {
             "title" : "Alertas",
-            "url"   : "/components/alerts/"
+            "url"   : "/v4/components/alerts/"
         } ,
     
 
     
         {
             "title" : "Approach",
-            "url"   : "/extend/approach/"
+            "url"   : "/v4/extend/approach/"
         } ,
     
 
     
         {
             "title" : "Barra de navegação",
-            "url"   : "/components/navbar/"
+            "url"   : "/v4/components/navbar/"
         } ,
     
 
     
         {
             "title" : "Boas práticas",
-            "url"   : "/getting-started/best-practices/"
+            "url"   : "/v4/getting-started/best-practices/"
         } ,
     
 
     
         {
             "title" : "Bootstrap em Português (Brasil) &middot; O mais popular framework front-end responsivo e focado para dispositivos móveis do mundo.",
-            "url"   : "/"
+            "url"   : "/v4/"
         } ,
     
 
     
         {
             "title" : "Botões",
-            "url"   : "/components/buttons/"
+            "url"   : "/v4/components/buttons/"
         } ,
     
 
     
         {
             "title" : "Breadcrumb",
-            "url"   : "/components/breadcrumb/"
+            "url"   : "/v4/components/breadcrumb/"
         } ,
     
 
     
         {
             "title" : "Carousel",
-            "url"   : "/components/carousel/"
+            "url"   : "/v4/components/carousel/"
         } ,
     
 
     
         {
             "title" : "Cartas",
-            "url"   : "/components/card/"
+            "url"   : "/v4/components/card/"
         } ,
     
 
     
         {
             "title" : "Classes de ajuda",
-            "url"   : "/components/utilities/"
+            "url"   : "/v4/components/utilities/"
         } ,
     
 
     
         {
             "title" : "Collapse",
-            "url"   : "/components/collapse/"
+            "url"   : "/v4/components/collapse/"
         } ,
     
 
     
         {
             "title" : "Conteúdo",
-            "url"   : "/getting-started/contents/"
+            "url"   : "/v4/getting-started/contents/"
         } ,
     
 
     
         {
             "title" : "Código",
-            "url"   : "/content/code/"
+            "url"   : "/v4/content/code/"
         } ,
     
 
     
         {
             "title" : "Download",
-            "url"   : "/getting-started/download/"
+            "url"   : "/v4/getting-started/download/"
         } ,
     
 
     
         {
             "title" : "Dropdowns",
-            "url"   : "/components/dropdowns/"
+            "url"   : "/v4/components/dropdowns/"
         } ,
     
 
     
         {
             "title" : "Equipe",
-            "url"   : "/about/team/"
+            "url"   : "/v4/about/team/"
         } ,
     
 
     
         {
             "title" : "Etiquetas",
-            "url"   : "/components/tag/"
+            "url"   : "/v4/components/tag/"
         } ,
     
 
     
         {
             "title" : "Exemplos",
-            "url"   : "/examples/"
+            "url"   : "/v4/examples/"
         } ,
     
 
     
         {
             "title" : "Extend",
-            "url"   : "/extend/"
+            "url"   : "/v4/extend/"
         } ,
     
 
     
         {
             "title" : "Ferramentas de construção",
-            "url"   : "/getting-started/build-tools/"
+            "url"   : "/v4/getting-started/build-tools/"
         } ,
     
 
     
         {
             "title" : "Ferramentas de dicas",
-            "url"   : "/components/tooltips/"
+            "url"   : "/v4/components/tooltips/"
         } ,
     
 
     
         {
             "title" : "Figuras",
-            "url"   : "/content/figures/"
+            "url"   : "/v4/content/figures/"
         } ,
     
 
     
         {
             "title" : "Flexbox",
-            "url"   : "/getting-started/flexbox/"
+            "url"   : "/v4/getting-started/flexbox/"
         } ,
     
 
     
         {
             "title" : "Formulários",
-            "url"   : "/components/forms/"
+            "url"   : "/v4/components/forms/"
         } ,
     
 
     
         {
             "title" : "Grupo de botões",
-            "url"   : "/components/button-group/"
+            "url"   : "/v4/components/button-group/"
         } ,
     
 
     
         {
             "title" : "Grupo de entrada",
-            "url"   : "/components/input-group/"
+            "url"   : "/v4/components/input-group/"
         } ,
     
 
     
         {
             "title" : "Grupo de lista",
-            "url"   : "/components/list-group/"
+            "url"   : "/v4/components/list-group/"
         } ,
     
 
     
         {
             "title" : "História",
-            "url"   : "/about/history/"
+            "url"   : "/v4/about/history/"
         } ,
     
 
     
         {
             "title" : "Icon fonts",
-            "url"   : "/extend/icon-fonts/"
+            "url"   : "/v4/extend/icon-fonts/"
         } ,
     
 
     
         {
             "title" : "Imagens",
-            "url"   : "/content/images/"
+            "url"   : "/v4/content/images/"
         } ,
     
 
     
         {
             "title" : "Introdução",
-            "url"   : "/getting-started/introduction/"
+            "url"   : "/v4/getting-started/introduction/"
         } ,
     
 
     
         {
             "title" : "JavaScript",
-            "url"   : "/getting-started/javascript/"
+            "url"   : "/v4/getting-started/javascript/"
         } ,
     
 
     
         {
             "title" : "Jumbotron",
-            "url"   : "/components/jumbotron/"
+            "url"   : "/v4/components/jumbotron/"
         } ,
     
 
     
         {
             "title" : "Licença - Perguntas e Respostas",
-            "url"   : "/about/license/"
+            "url"   : "/v4/about/license/"
         } ,
     
 
     
         {
             "title" : "Manual de identidade visual",
-            "url"   : "/about/brand/"
+            "url"   : "/v4/about/brand/"
         } ,
     
 
     
         {
             "title" : "Migrating to v4",
-            "url"   : "/migration/"
+            "url"   : "/v4/migration/"
         } ,
     
 
     
         {
             "title" : "Modal",
-            "url"   : "/components/modal/"
+            "url"   : "/v4/components/modal/"
         } ,
     
 
     
         {
             "title" : "Navegadores e dispositivos",
-            "url"   : "/getting-started/browsers-devices/"
+            "url"   : "/v4/getting-started/browsers-devices/"
         } ,
     
 
     
         {
             "title" : "Navegação",
-            "url"   : "/components/navs/"
+            "url"   : "/v4/components/navs/"
         } ,
     
 
     
         {
             "title" : "Objeto de mídia",
-            "url"   : "/layout/media-object/"
+            "url"   : "/v4/layout/media-object/"
         } ,
     
 
     
         {
             "title" : "Opções de personalização",
-            "url"   : "/getting-started/options/"
+            "url"   : "/v4/getting-started/options/"
         } ,
     
 
     
         {
             "title" : "Paginação",
-            "url"   : "/components/pagination/"
+            "url"   : "/v4/components/pagination/"
         } ,
     
 
     
         {
             "title" : "Popovers",
-            "url"   : "/components/popovers/"
+            "url"   : "/v4/components/popovers/"
         } ,
     
 
     
         {
             "title" : "Progresso",
-            "url"   : "/components/progress/"
+            "url"   : "/v4/components/progress/"
         } ,
     
 
     
         {
             "title" : "Reinicialização",
-            "url"   : "/content/reboot/"
+            "url"   : "/v4/content/reboot/"
         } ,
     
 
     
         {
             "title" : "Rolagem espiã",
-            "url"   : "/components/scrollspy/"
+            "url"   : "/v4/components/scrollspy/"
         } ,
     
 
     
         {
             "title" : "Sistemas de grades",
-            "url"   : "/layout/grid/"
+            "url"   : "/v4/layout/grid/"
         } ,
     
 
     
         {
             "title" : "Sistemas de grades Flexbox",
-            "url"   : "/layout/flexbox-grid/"
+            "url"   : "/v4/layout/flexbox-grid/"
         } ,
     
 
     
         {
             "title" : "Tabelas",
-            "url"   : "/content/tables/"
+            "url"   : "/v4/content/tables/"
         } ,
     
 
     
         {
             "title" : "Tipografia",
-            "url"   : "/content/typography/"
+            "url"   : "/v4/content/typography/"
         } ,
     
 
     
         {
             "title" : "Traduções",
-            "url"   : "/about/translations/"
+            "url"   : "/v4/about/translations/"
         } ,
     
 
     
         {
             "title" : "Utilitários Responsivos",
-            "url"   : "/layout/responsive-utilities/"
+            "url"   : "/v4/layout/responsive-utilities/"
         } ,
     
 
     
         {
             "title" : "Visão geral",
-            "url"   : "/layout/overview/"
+            "url"   : "/v4/layout/overview/"
         } ,
     
 
     
         {
             "title" : "Wall of browser bugs",
-            "url"   : "/browser-bugs/"
+            "url"   : "/v4/browser-bugs/"
         } 
     
 
