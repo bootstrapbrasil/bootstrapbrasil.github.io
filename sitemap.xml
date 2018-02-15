@@ -103,10 +103,10 @@
 <loc>http://getbootstrap.com.br/docs/4.0/examples/</loc>
 </url>
 <url>
-<loc>http://getbootstrap.com.br/</loc>
+<loc>http://getbootstrap.com.br/docs/3.3/</loc>
 </url>
 <url>
-<loc>http://getbootstrap.com.br/docs/3.3/</loc>
+<loc>http://getbootstrap.com.br/</loc>
 </url>
 <url>
 <loc>http://getbootstrap.com.br/docs/4.0/extend/</loc>
@@ -206,10 +206,6 @@
 </url>
 <url>
 <loc>http://getbootstrap.com.br/docs/4.0/getting-started/webpack/</loc>
-</url>
-<url>
-<loc>http://getbootstrap.com.br/blog/</loc>
-<lastmod>2018-02-15T11:28:42-06:00</lastmod>
 </url>
 <url>
 <loc>http://getbootstrap.com.br/docs/3.3/about/</loc>
@@ -402,9 +398,5 @@
 <url>
 <loc>http://getbootstrap.com.br/docs/4.0/examples/tooltip-viewport/</loc>
 <lastmod>2018-02-13T19:06:36-06:00</lastmod>
-</url>
-<url>
-<loc>http://getbootstrap.com.br/slack/</loc>
-<lastmod>2018-02-15T11:28:42-06:00</lastmod>
 </url>
 </urlset>
