@@ -397,7 +397,7 @@
 <li class="toc-entry toc-h3"><a href="#html5-doctype">HTML5 doctype</a></li>
 <li class="toc-entry toc-h3"><a href="#meta-tag-responsiva">Meta tag responsiva</a></li>
 <li class="toc-entry toc-h3"><a href="#box-sizing">Box-sizing</a></li>
-<li class="toc-entry toc-h3"><a href="#reinicialização">Reinicialização</a></li>
+<li class="toc-entry toc-h3"><a href="#reboot">Reboot</a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#comunidade">Comunidade</a></li>
@@ -430,22 +430,30 @@
 <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
 <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
 
-<p>Curiosidade para saber quais componentes precisam de jQuery, nosso JS e Popper,js? Clique em “Mostrar componentes dependentes de JavaScript” logo abaixo. Se ainda tem dúvidas sobre a estrutura da página em geral, continue lendo para um templete de exemplo de página.</p>
+<p>Curiosidade para saber quais componentes precisam de jQuery, nosso JS e Popper.js? Clique em “Mostrar componentes dependentes de JavaScript” logo abaixo. Se ainda tem dúvidas sobre a estrutura da página em geral, continue lendo para um templete de exemplo de página.</p>
 
 <details>
 <summary class="text-primary mb-3">Mostrar componentes dependentes de JavaScript</summary>
 
 
 <ul>
-  <li>Alerts for dismissing</li>
-  <li>Buttons for toggling states and checkbox/radio functionality</li>
-  <li>Carousel for all slide behaviors, controls, and indicators</li>
-  <li>Collapse for toggling visibility of content</li>
-  <li>Dropdowns for displaying and positioning (also requires <a href="https://popper.js.org/">Popper.js</a>)</li>
-  <li>Modals for displaying, positioning, and scroll behavior</li>
-  <li>Navbar for extending our Collapse plugin to implement responsive behavior</li>
-  <li>Tooltips and popovers for displaying and positioning (also requires <a href="https://popper.js.org/">Popper.js</a>)</li>
-  <li>Scrollspy for scroll behavior and navigation updates</li>
+  <li>Botões de dispensar alertas;</li>
+  <li>Botões para alternar estados e funcionalidades dos botões checkboxes e radios;</li>
+  <li>Comportamento de deslize, controles e indicadores do Carousel;</li>
+  <li>Colapso para alternar visibilidade de conteúdo;</li>
+  <li>Apresentação e posicionamento de dropdowns;
+    <ul>
+      <li>Também requer <a href="https://popper.js.org/">Popper.js</a>.</li>
+    </ul>
+  </li>
+  <li>Apresentação, posicionamento e rolagem nos Modais;</li>
+  <li>Aprimorar nosso plugin de colapso em navbars, para implementar comportamento responsivo;</li>
+  <li>Posicionamento e apresentação de tooltips e popovers;
+    <ul>
+      <li>Também requer <a href="https://popper.js.org/">Popper.js</a>.</li>
+    </ul>
+  </li>
+  <li>Comportamento de rolagem e atualizações de navegação no Scrollspy.</li>
 </ul>
 
 </details>
@@ -454,7 +462,7 @@
 
 <p>Tenha certeza de configurar suas páginas com padrões recentes de desenvolvimento e design. Ou seja, utilizando HTML5 doctype e a meta tag viewport para proporcionar o funcionamento responsivo adequado. Feito isto, suas páginas devem ficar assim:</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"pt-br"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;head&gt;</span>
     <span class="c">&lt;!-- Meta tags Obrigatórias --&gt;</span>
@@ -481,57 +489,57 @@
 
 <h2 id="importância-geral">Importância geral</h2>
 
-<p>Bootstrap employs a handful of important global styles and settings that you’ll need to be aware of when using it, all of which are almost exclusively geared towards the <em>normalization</em> of cross browser styles. Let’s dive in.</p>
+<p>O Bootstrap usa um punhado de estilos globais e configurações importantes que você precisará ficar atento, quando tiver usando, os quais são guiados a <em>normalização</em> de estilos cross browsers. Vamos lá!</p>
 
 <h3 id="html5-doctype">HTML5 doctype</h3>
 
-<p>Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky incomplete styling, but including it shouldn’t cause any considerable hiccups.</p>
+<p>Bootstrap exige o uso do doctype HTML5. Sem isso, você verá alguns estilos incompletos e esquisitos.</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"pt-br"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/html&gt;</span></code></pre></figure>
 
 <h3 id="meta-tag-responsiva">Meta tag responsiva</h3>
 
-<p>Bootstrap is developed <em>mobile first</em>, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, <strong>add the responsive viewport meta tag</strong> to your <code class="highlighter-rouge">&lt;head&gt;</code>.</p>
+<p>Bootstrap tem uma abordagem <em>mobile first</em>, uma estratégia que optimizamos o código para dispositivos móveis primeiro e, então, é que começamos a pensar em media queries para aparelhos maiores. Por isso, para garantir renderização adequada e <em>touch zooming</em> em todos eletrônicos, <strong>use a tag responsiva viewport</strong> no <code class="highlighter-rouge">&lt;head&gt;</code>.</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1, shrink-to-fit=no"</span><span class="nt">&gt;</span></code></pre></figure>
 
-<p>You can see an example of this in action in the <a href="#starter-template">starter template</a>.</p>
+<p>Você pode ver um exemplo disso em ação, neste <a href="#starter-template">template iniciante</a>.</p>
 
 <h3 id="box-sizing">Box-sizing</h3>
 
-<p>For more straightforward sizing in CSS, we switch the global <code class="highlighter-rouge">box-sizing</code> value from <code class="highlighter-rouge">content-box</code> to <code class="highlighter-rouge">border-box</code>. This ensures <code class="highlighter-rouge">padding</code> does not affect the final computed width of an element, but it can cause problems with some third party software like Google Maps and Google Custom Search Engine.</p>
+<p>Para um redimensionamento mais intuitivo no CSS, nós trocamos o valor do <code class="highlighter-rouge">box-sizing</code> global de <code class="highlighter-rouge">content-box</code> para <code class="highlighter-rouge">border-box</code>. Dessa maneira, garantimos que o <code class="highlighter-rouge">padding</code> não afetará a largura computada final de um elemento, apesar de isto poder causar problemas em alguns softwares de terceiros, como Google Maps e Google Search Engine.</p>
 
-<p>On the rare occasion you need to override it, use something like the following:</p>
+<p>Na rara ocasião de precisar sobrecrever isso, use algo como o seguinte:</p>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.selector-for-some-widget</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.seletor-para-algum-widget</span> <span class="p">{</span>
   <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">content-box</span><span class="p">;</span>
 <span class="p">}</span></code></pre></figure>
 
-<p>With the above snippet, nested elements—including generated content via <code class="highlighter-rouge">::before</code> and <code class="highlighter-rouge">::after</code>—will all inherit the specified <code class="highlighter-rouge">box-sizing</code> for that <code class="highlighter-rouge">.selector-for-some-widget</code>.</p>
+<p>Com o snippet acima, elementos aninhados (incluindo conteúdo gerado via <code class="highlighter-rouge">::before</code> e <code class="highlighter-rouge">::after</code>) vão herdar o <code class="highlighter-rouge">box-sizing</code> especificado no <code class="highlighter-rouge">seletor-para-algum-widget</code>.</p>
 
-<p>Learn more about <a href="https://css-tricks.com/box-sizing/">box model and sizing at CSS Tricks</a>.</p>
+<p>Aprenda mais sobre o <a href="https://css-tricks.com/box-sizing/">box model e dimensionamento, no CSS Tricks</a>.</p>
 
-<h3 id="reinicialização">Reinicialização</h3>
+<h3 id="reboot">Reboot</h3>
 
-<p>For improved cross-browser rendering, we use <a href="/docs/4.1/content/reboot/">Reboot</a> to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.</p>
+<p>Para uma renderização cross-browser melhorada, nós usamos o <a href="/docs/4.1/content/reboot/">Reboot</a> para corrigir inconsistências através dos browsers, enquanto provemos resets um pouquinho customizados para elementos HTML comuns.</p>
 
 <h2 id="comunidade">Comunidade</h2>
 
-<p>Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.</p>
+<p>Fique atualizado no desenvolvimento do Bootstrap e encontre nossa comunidade através destas fontes úteis:</p>
 
 <ul>
-  <li>Follow <a href="https://twitter.com/getbootstrap">@getbootstrap on Twitter</a>.</li>
-  <li>Read and subscribe to <a href="http://blog.getbootstrap.com.br">The Official Bootstrap Blog</a>.</li>
-  <li>Join <a href="http://bootstrapbrasil-slack.herokuapp.com">the official Slack room</a>.</li>
-  <li>Chat with fellow Bootstrappers in IRC. On the <code class="highlighter-rouge">irc.freenode.net</code> server, in the <code class="highlighter-rouge">##bootstrap</code> channel.</li>
-  <li>Implementation help may be found at Stack Overflow (tagged <a href="https://stackoverflow.com/questions/tagged/bootstrap-4"><code class="highlighter-rouge">bootstrap-4</code></a>).</li>
-  <li>Developers should use the keyword <code class="highlighter-rouge">bootstrap</code> on packages which modify or add to the functionality of Bootstrap when distributing through <a href="https://www.npmjs.com/browse/keyword/bootstrap">npm</a> or similar delivery mechanisms for maximum discoverability.</li>
+  <li>Siga <a href="https://twitter.com/getbootstrap">@getbootstrap no Twitter</a>;</li>
+  <li>Leia e se inscreva no <a href="http://blog.getbootstrap.com.br">Blog Bootstrap Oficial</a>;</li>
+  <li>Participe da <a href="http://bootstrapbrasil-slack.herokuapp.com">nossa sala oficial no Slack</a>;</li>
+  <li>Converse com os Bootstrappers via IRC, através do servidor <code class="highlighter-rouge">irc.freenode.net</code>, no canal <code class="highlighter-rouge">##bootstrap</code>;</li>
+  <li>Ajuda com implementação pode ser encontrada no Stack Overflow (tag <a href="https://stackoverflow.com/questions/tagged/bootstrap-4"><code class="highlighter-rouge">bootstrap-4</code></a>);</li>
+  <li>Desenvolvedores devem usar a palavra-chave <code class="highlighter-rouge">bootstrap</code> em pacotes que modificarem ou adicionarem funcionalidades do Bootstrap, quando distribuindo via <a href="https://www.npmjs.com/browse/keyword/bootstrap">npm</a> ou sistemas de entrega semelhantes, para máxima visibilidade.</li>
 </ul>
 
-<p>You can also follow <a href="https://twitter.com/getbootstrap">@getbootstrap on Twitter</a> for the latest gossip and awesome music videos.</p>
+<p>Você também pode seguir o <a href="https://twitter.com/getbootstrap">@getbootstrap no Twitter</a>, para as melhores fofocas e vídeo clipes. =)</p>
 
         </main>
       </div>

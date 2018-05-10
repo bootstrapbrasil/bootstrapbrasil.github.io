@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Learn how to use Bootstrap’s included npm scripts to build our documentation, compile source code, run tests, and more.">
+<meta name="description" content="Aprenda a usar os scripts npm incluídos no Bootstrap para construir nossa documentação, compilar o código fonte, realizar testes, entre outras coisas.">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Jekyll v3.7.3">
 
-<title>Build tools · Bootstrap em Português</title>
+<title>Ferramentas de build · Bootstrap em Português</title>
 
 <!-- Bootstrap core CSS -->
 
@@ -35,14 +35,14 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@getbootstrap">
 <meta name="twitter:creator" content="@getbootstrap">
-<meta name="twitter:title" content="Build tools">
-<meta name="twitter:description" content="Learn how to use Bootstrap’s included npm scripts to build our documentation, compile source code, run tests, and more.">
+<meta name="twitter:title" content="Ferramentas de build">
+<meta name="twitter:description" content="Aprenda a usar os scripts npm incluídos no Bootstrap para construir nossa documentação, compilar o código fonte, realizar testes, entre outras coisas.">
 <meta name="twitter:image" content="http://getbootstrap.com.br/assets/brand/bootstrap-social-logo.png">
 
 <!-- Facebook -->
 <meta property="og:url" content="http://getbootstrap.com.br/docs/4.1/getting-started/build-tools/">
-<meta property="og:title" content="Build tools">
-<meta property="og:description" content="Learn how to use Bootstrap’s included npm scripts to build our documentation, compile source code, run tests, and more.">
+<meta property="og:title" content="Ferramentas de build">
+<meta property="og:description" content="Aprenda a usar os scripts npm incluídos no Bootstrap para construir nossa documentação, compilar o código fonte, realizar testes, entre outras coisas.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="http://getbootstrap.com.br/assets/brand/bootstrap-social.png">
 <meta property="og:image:secure_url" content="http://getbootstrap.com.br/assets/brand/bootstrap-social.png">
@@ -385,88 +385,88 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#tooling-setup">Tooling setup</a></li>
-<li class="toc-entry toc-h2"><a href="#using-npm-scripts">Using NPM scripts</a></li>
+<li class="toc-entry toc-h2"><a href="#setup-de-ferramentas">Setup de ferramentas</a></li>
+<li class="toc-entry toc-h2"><a href="#usando-scripts-npm">Usando scripts NPM</a></li>
 <li class="toc-entry toc-h2"><a href="#autoprefixer">Autoprefixer</a></li>
-<li class="toc-entry toc-h2"><a href="#local-documentation">Local documentation</a></li>
-<li class="toc-entry toc-h2"><a href="#troubleshooting">Troubleshooting</a></li>
+<li class="toc-entry toc-h2"><a href="#documentação-local">Documentação local</a></li>
+<li class="toc-entry toc-h2"><a href="#solução-de-problemas">Solução de problemas</a></li>
 </ul>
           </div>
         
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
-          <h1 class="bd-title" id="content">Build tools</h1>
-          <p class="bd-lead">Learn how to use Bootstrap’s included npm scripts to build our documentation, compile source code, run tests, and more.</p>
+          <h1 class="bd-title" id="content">Ferramentas de build</h1>
+          <p class="bd-lead">Aprenda a usar os scripts npm incluídos no Bootstrap para construir nossa documentação, compilar o código fonte, realizar testes, entre outras coisas.</p>
           <!-- <script async src="https://cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=getbootstrapcom" id="_carbonads_js"></script> -->
 
-          <h2 id="tooling-setup">Tooling setup</h2>
+          <h2 id="setup-de-ferramentas">Setup de ferramentas</h2>
 
-<p>Bootstrap uses <a href="https://docs.npmjs.com/misc/scripts">NPM scripts</a> for its build system. Our <a href="https://github.com/bootstrapbrasil/bootstrap/blob/v4.1.0/package.json">package.json</a> includes convenient methods for working with the framework, including compiling code, running tests, and more.</p>
+<p>Bootstrap usa <a href="https://docs.npmjs.com/misc/scripts">scripts NPM</a> no seu sistema de build. Nosso <a href="https://github.com/bootstrapbrasil/bootstrap/blob/v4.1.0/package.json">package.json</a> possui métodos convenientes ao nosso framework, incluindo compilação de código, realização de testes e outras coisas.</p>
 
-<p>To use our build system and run our documentation locally, you’ll need a copy of Bootstrap’s source files and Node. Follow these steps and you should be ready to rock:</p>
+<p>Para usar nossa build e executar a documentação localmente, você vai precisar de uma cópia dos arquivos fontes Bootstrap e do Node.js.</p>
 
 <ol>
-  <li><a href="https://nodejs.org/download/">Download and install Node.js</a>, which we use to manage our dependencies.</li>
-  <li>Navigate to the root <code class="highlighter-rouge">/bootstrap</code> directory and run <code class="highlighter-rouge">npm install</code> to install our local dependencies listed in <a href="https://github.com/bootstrapbrasil/bootstrap/blob/v4.1.0/package.json">package.json</a>.</li>
-  <li><a href="https://www.ruby-lang.org/en/documentation/installation/">Install Ruby</a>, install <a href="https://bundler.io/">Bundler</a> with <code class="highlighter-rouge">gem install bundler</code>, and finally run <code class="highlighter-rouge">bundle install</code>. This will install all Ruby dependencies, such as Jekyll and plugins.
+  <li><a href="https://nodejs.org/download/">Baixe e instale o Node.js</a>, o qual usamos para gerenciar nossas dependências;</li>
+  <li>Vá até o diretório raiz <code class="highlighter-rouge">/bootstrap</code> e execute o comando <code class="highlighter-rouge">npm install</code>, para instalar nossas dependências locais listadas no <a href="https://github.com/bootstrapbrasil/bootstrap/blob/v4.1.0/package.json">package.json</a>;</li>
+  <li>Primeiro, instale o <a href="https://www.ruby-lang.org/en/documentation/installation/">Ruby</a>. Depois, instale o <a href="https://bundler.io/">Bundler</a> com o comando <code class="highlighter-rouge">gem install bundler</code> e execute <code class="highlighter-rouge">bundle install</code>. Assim, você vai instalar todas as dependências Ruby, como Jekyll e plugins.
     <ul>
-      <li><strong>Windows users:</strong> Read <a href="https://jekyllrb.com/docs/windows/">this guide</a> to get Jekyll up and running without problems.</li>
+      <li><strong>Usuários de Windows:</strong> leiam <a href="https://jekyllrb.com/docs/windows/">este guia</a> para conseguir rodar o jekyll, tranquilamente.</li>
     </ul>
   </li>
 </ol>
 
-<p>When completed, you’ll be able to run the various commands provided from the command line.</p>
+<p>Quando fizer isso, você será capaz de executar diversos comandos disponíveis em cli.</p>
 
-<h2 id="using-npm-scripts">Using NPM scripts</h2>
+<h2 id="usando-scripts-npm">Usando scripts NPM</h2>
 
-<p>Our <a href="https://github.com/bootstrapbrasil/bootstrap/blob/v4.1.0/package.json">package.json</a> includes the following commands and tasks:</p>
+<p>Nosso <a href="https://github.com/bootstrapbrasil/bootstrap/blob/v4.1.0/package.json">package.json</a> possui os seguintes comandos e tarefas:</p>
 
 <table>
   <thead>
     <tr>
-      <th>Task</th>
-      <th>Description</th>
+      <th>Comando</th>
+      <th>Tarefa</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><code class="highlighter-rouge">npm run dist</code></td>
-      <td><code class="highlighter-rouge">npm run dist</code> creates the <code class="highlighter-rouge">/dist</code> directory with compiled files. <strong>Uses <a href="https://sass-lang.com/">Sass</a>, <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>, and <a href="https://github.com/mishoo/UglifyJS2">UglifyJS</a>.</strong></td>
+      <td>cria o diretório <code class="highlighter-rouge">/dist</code>, o qual tem arquivos compilados (<strong>usa <a href="https://sass-lang.com/">Sass</a>, <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> e <a href="https://github.com/mishoo/UglifyJS2">UglifyJS</a>.</strong>).</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">npm test</code></td>
-      <td>Same as <code class="highlighter-rouge">npm run dist</code> plus it runs tests locally</td>
+      <td>é a mesma coisa que <code class="highlighter-rouge">npm run dist</code>, com a diferença que ele excuta os testes localmente.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">npm run docs</code></td>
-      <td>Builds and lints CSS and JavaScript for docs. You can then run the documentation locally via <code class="highlighter-rouge">npm run docs-serve</code>.</td>
+      <td>Constrói e formata o CSS e JavaScript para documentos. Assim, depois você pode rodar a documentação localmente, usando <code class="highlighter-rouge">npm run docs-serve</code></td>
     </tr>
   </tbody>
 </table>
 
-<p>Run <code class="highlighter-rouge">npm run</code> to see all the npm scripts.</p>
+<p>Execute <code class="highlighter-rouge">npm run</code> para ver todos os scripts npm.</p>
 
 <h2 id="autoprefixer">Autoprefixer</h2>
 
-<p>Bootstrap uses <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> (included in our build process) to automatically add vendor prefixes to some CSS properties at build time. Doing so saves us time and code by allowing us to write key parts of our CSS a single time while eliminating the need for vendor mixins like those found in v3.</p>
+<p>Boostrap usa o <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> (incluído na build) para, automaticamente, adicionar prefixos de fabricantes em algumas propriedades CSS. Deste modo, poupamos código e tempo porque nos ocupamos só em escrever as partes chaves do nosso CSS uma vez, sem precisar de mixins para adicionar prefixos (como aqueles da v3).</p>
 
-<p>We maintain the list of browsers supported through Autoprefixer in a separate file within our GitHub repository. See <a href="https://github.com/bootstrapbrasil/bootstrap/blob/v4.1.0/package.json">/package.json</a> for details.</p>
+<p>Nós mantemos uma lista de browsers suportados no Autoprefixer em um arquivo separado, em um repositório do GitHub. Veja <a href="https://github.com/bootstrapbrasil/bootstrap/blob/v4.1.0/package.json">/package.json</a>, para mais detalhes.</p>
 
-<h2 id="local-documentation">Local documentation</h2>
+<h2 id="documentação-local">Documentação local</h2>
 
-<p>Running our documentation locally requires the use of Jekyll, a decently flexible static site generator that provides us: basic includes, Markdown-based files, templates, and more. Here’s how to get it started:</p>
+<p>Rodar nossa documentação, localmente, requer o uso do Jekyll. Ele é um gerador flexível de sites estáticos, o qual provê: includes básicos, arquivos em Markdown, templates, entre outras coisas. Para se familiarizar, faça o seguinte:</p>
 
 <ol>
-  <li>Run through the <a href="#tooling-setup">tooling setup</a> above to install Jekyll (the site builder) and other Ruby dependencies with <code class="highlighter-rouge">bundle install</code>.</li>
-  <li>From the root <code class="highlighter-rouge">/bootstrap</code> directory, run <code class="highlighter-rouge">npm run docs-serve</code> in the command line.</li>
-  <li>Open <code class="highlighter-rouge">http://localhost:9001</code> in your browser, and voilà.</li>
+  <li>Leia sobre o <a href="#tooling-setup">setup de ferramentas</a>, acima, para instalar o Jekyll e outras dependências Ruby com <code class="highlighter-rouge">bundle-install</code>;</li>
+  <li>Dentro do diretório raiz <code class="highlighter-rouge">/bootstrap</code>, execute <code class="highlighter-rouge">npm run docs-serve</code> na linha de comando;</li>
+  <li>Abra <code class="highlighter-rouge">http://localhost:9001</code> no seu browser e voilà.</li>
 </ol>
 
-<p>Learn more about using Jekyll by reading its <a href="https://jekyllrb.com/docs/home/">documentation</a>.</p>
+<p>Aprenda mais sobre o uso do Jekyll, lendo sua <a href="https://jekyllrb.com/docs/home/">documentação</a>.</p>
 
-<h2 id="troubleshooting">Troubleshooting</h2>
+<h2 id="solução-de-problemas">Solução de problemas</h2>
 
-<p>Should you encounter problems with installing dependencies, uninstall all previous dependency versions (global and local). Then, rerun <code class="highlighter-rouge">npm install</code>.</p>
+<p>Se você encontrar problemas para instalar dependências, desinstale todas as versões anteriores das dependências (global e localmente), então, re-execute <code class="highlighter-rouge">npm install</code>.</p>
 
 
         </main>
