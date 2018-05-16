@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Learn how to include Bootstrap in your project using Webpack 3.">
+<meta name="description" content="Aprenda como integrar o Bootstrap ao seu projeto, usando Webpack 3.">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Jekyll v3.7.3">
 
@@ -36,13 +36,13 @@
 <meta name="twitter:site" content="@getbootstrap">
 <meta name="twitter:creator" content="@getbootstrap">
 <meta name="twitter:title" content="Webpack">
-<meta name="twitter:description" content="Learn how to include Bootstrap in your project using Webpack 3.">
+<meta name="twitter:description" content="Aprenda como integrar o Bootstrap ao seu projeto, usando Webpack 3.">
 <meta name="twitter:image" content="http://getbootstrap.com.br/assets/brand/bootstrap-social-logo.png">
 
 <!-- Facebook -->
 <meta property="og:url" content="http://getbootstrap.com.br/docs/4.1/getting-started/webpack/">
 <meta property="og:title" content="Webpack">
-<meta property="og:description" content="Learn how to include Bootstrap in your project using Webpack 3.">
+<meta property="og:description" content="Aprenda como integrar o Bootstrap ao seu projeto, usando Webpack 3.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="http://getbootstrap.com.br/assets/brand/bootstrap-social.png">
 <meta property="og:image:secure_url" content="http://getbootstrap.com.br/assets/brand/bootstrap-social.png">
@@ -385,12 +385,12 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#installing-bootstrap">Installing Bootstrap</a></li>
-<li class="toc-entry toc-h2"><a href="#importing-javascript">Importing JavaScript</a></li>
-<li class="toc-entry toc-h2"><a href="#importing-styles">Importing Styles</a>
+<li class="toc-entry toc-h2"><a href="#instalação-do-bootstrap">Instalação do Bootstrap</a></li>
+<li class="toc-entry toc-h2"><a href="#inportação-do-javascript">Inportação do JavaScript</a></li>
+<li class="toc-entry toc-h2"><a href="#importar-estilos">Importar estilos</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#importing-precompiled-sass">Importing Precompiled Sass</a></li>
-<li class="toc-entry toc-h3"><a href="#importing-compiled-css">Importing Compiled CSS</a></li>
+<li class="toc-entry toc-h3"><a href="#importação-do-sass-pré-compilado">Importação do Sass pré-compilado</a></li>
+<li class="toc-entry toc-h3"><a href="#importação-do-css-compilado">Importação do CSS compilado</a></li>
 </ul>
 </li>
 </ul>
@@ -399,57 +399,55 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">Webpack</h1>
-          <p class="bd-lead">Learn how to include Bootstrap in your project using Webpack 3.</p>
+          <p class="bd-lead">Aprenda como integrar o Bootstrap ao seu projeto, usando Webpack 3.</p>
           <!-- <script async src="https://cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=getbootstrapcom" id="_carbonads_js"></script> -->
 
-          <h2 id="installing-bootstrap">Installing Bootstrap</h2>
+          <h2 id="instalação-do-bootstrap">Instalação do Bootstrap</h2>
 
-<p><a href="/docs/4.1/getting-started/download/#npm">Install bootstrap</a> as a Node.js module using npm.</p>
+<p><a href="/docs/4.1/getting-started/download/#npm">Instale o Bootstrap</a> como um módulo do Node.js, usando npm.</p>
 
-<h2 id="importing-javascript">Importing JavaScript</h2>
+<h2 id="inportação-do-javascript">Inportação do JavaScript</h2>
 
-<p>Import <a href="/docs/4.1/getting-started/javascript/">Bootstrap’s JavaScript</a> by adding this line to your app’s entry point (usually <code class="highlighter-rouge">index.js</code> or <code class="highlighter-rouge">app.js</code>):</p>
+<p>Importe o <a href="/docs/4.1/getting-started/javascript/">JavaScript Bootstrap</a>, adicionando esta linha ao <em>entry point</em> do seu app (<code class="highlighter-rouge">index.js</code> ou <code class="highlighter-rouge">app.js</code>, normalmente):</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="k">import</span> <span class="s1">'bootstrap'</span><span class="p">;</span></code></pre></figure>
 
-<p>Alternatively, you may <strong>import plugins individually</strong> as needed:</p>
+<p>Opcionalmente, você também pode <strong>importar plugins individualmente</strong>, sempre que necessário:</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="k">import</span> <span class="s1">'bootstrap/js/dist/util'</span><span class="p">;</span>
 <span class="k">import</span> <span class="s1">'bootstrap/js/dist/dropdown'</span><span class="p">;</span>
 <span class="p">...</span></code></pre></figure>
 
-<p>Bootstrap is dependent on <a href="https://jquery.com/">jQuery</a> and <a href="https://popper.js.org/">Popper</a>,
-these are defined as <code class="highlighter-rouge">peerDependencies</code>, this means that you will have to make sure to add both of them
-to your <code class="highlighter-rouge">package.json</code> using <code class="highlighter-rouge">npm install --save jquery popper.js</code>.</p>
+<p>Bootstrap depende do <a href="https://jquery.com/">jQuery</a> e <a href="https://popper.js.org/">Popper</a>, os quais são definidos como <code class="highlighter-rouge">peerDependencies</code>, significando que você terá que se certificar de adicionar os dois ao seu <code class="highlighter-rouge">package.json</code>, usando <code class="highlighter-rouge">npm install --save jquery popper.js</code>.</p>
 
 <div class="bd-callout bd-callout-warning">
-<p>Notice that if you chose to <strong>import plugins individually</strong>, you must also install <a href="https://github.com/webpack-contrib/exports-loader">exports-loader</a></p>
+<p>Perceba que se você escolher <strong>importar os plugins individualmente</strong>, deverá instalar o <a href="https://github.com/webpack-contrib/exports-loader">exports-loader</a>, também.</p>
 </div>
 
-<h2 id="importing-styles">Importing Styles</h2>
+<h2 id="importar-estilos">Importar estilos</h2>
 
-<h3 id="importing-precompiled-sass">Importing Precompiled Sass</h3>
+<h3 id="importação-do-sass-pré-compilado">Importação do Sass pré-compilado</h3>
 
-<p>To enjoy the full potential of Bootstrap and customize it to your needs, use the source files as a part of your project’s bundling process.</p>
+<p>Para aproveitar todo potencial e personalizar o Bootstrap do jeito que quiser, use os arquivos fontes como parte do seu <em>bundling process</em>.</p>
 
-<p>First, create your own <code class="highlighter-rouge">_custom.scss</code> and use it to override the <a href="/docs/4.1/getting-started/options/">built-in custom variables</a>. Then, use your main Sass file to import your custom variables, followed by Bootstrap:</p>
+<p>Primeiro, crie seu próprio <code class="highlighter-rouge">_custom.scss</code> e use-o para sobrescrever as <a href="/docs/4.1/getting-started/options/">variáveis integradas de customização</a>. Assim, use o arquivo Sass principal para importar suas variáveis personalizadas e depois o Bootstrap, em si:</p>
 
 <figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="s2">"custom"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s2">"~bootstrap/scss/bootstrap"</span><span class="p">;</span></code></pre></figure>
 
-<p>For Bootstrap to compile, make sure you install and use the required loaders: <a href="https://github.com/webpack-contrib/sass-loader">sass-loader</a>, <a href="https://github.com/postcss/postcss-loader">postcss-loader</a> with <a href="https://github.com/postcss/autoprefixer#webpack">Autoprefixer</a>. With minimal setup, your webpack config should include this rule or similar:</p>
+<p>Para o Bootstrap compilar, certifique-se de instalar e usar os <em>loaders</em> necessários, que são: <a href="https://github.com/webpack-contrib/sass-loader">sass-loader</a> e <a href="https://github.com/postcss/postcss-loader">postcss-loader</a> com <a href="https://github.com/postcss/autoprefixer#webpack">Autoprefixer</a>. Nas mínimas configurações, seu Webpack deve ter esta regra ou algo parecido:</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js">  <span class="p">...</span>
   <span class="p">{</span>
     <span class="nl">test</span><span class="p">:</span> <span class="sr">/</span><span class="se">\.(</span><span class="sr">scss</span><span class="se">)</span><span class="sr">$/</span><span class="p">,</span>
     <span class="nx">use</span><span class="p">:</span> <span class="p">[{</span>
-      <span class="na">loader</span><span class="p">:</span> <span class="s1">'style-loader'</span><span class="p">,</span> <span class="c1">// inject CSS to page</span>
+      <span class="na">loader</span><span class="p">:</span> <span class="s1">'style-loader'</span><span class="p">,</span> <span class="c1">// injeta CSS na página</span>
     <span class="p">},</span> <span class="p">{</span>
-      <span class="na">loader</span><span class="p">:</span> <span class="s1">'css-loader'</span><span class="p">,</span> <span class="c1">// translates CSS into CommonJS modules</span>
+      <span class="na">loader</span><span class="p">:</span> <span class="s1">'css-loader'</span><span class="p">,</span> <span class="c1">// traduz CSS em módulos commonJS</span>
     <span class="p">},</span> <span class="p">{</span>
-      <span class="na">loader</span><span class="p">:</span> <span class="s1">'postcss-loader'</span><span class="p">,</span> <span class="c1">// Run post css actions</span>
+      <span class="na">loader</span><span class="p">:</span> <span class="s1">'postcss-loader'</span><span class="p">,</span> <span class="c1">// Executa tarefas do postcss</span>
       <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
-        <span class="na">plugins</span><span class="p">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> <span class="c1">// post css plugins, can be exported to postcss.config.js</span>
+        <span class="na">plugins</span><span class="p">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> <span class="c1">// plugins postcss, podem ser exportados para o postcss.config.js</span>
           <span class="k">return</span> <span class="p">[</span>
             <span class="nx">require</span><span class="p">(</span><span class="s1">'precss'</span><span class="p">),</span>
             <span class="nx">require</span><span class="p">(</span><span class="s1">'autoprefixer'</span><span class="p">)</span>
@@ -457,18 +455,18 @@ to your <code class="highlighter-rouge">package.json</code> using <code class="h
         <span class="p">}</span>
       <span class="p">}</span>
     <span class="p">},</span> <span class="p">{</span>
-      <span class="na">loader</span><span class="p">:</span> <span class="s1">'sass-loader'</span> <span class="c1">// compiles Sass to CSS</span>
+      <span class="na">loader</span><span class="p">:</span> <span class="s1">'sass-loader'</span> <span class="c1">// compila Sass em CSS</span>
     <span class="p">}]</span>
   <span class="p">},</span>
   <span class="p">...</span></code></pre></figure>
 
-<h3 id="importing-compiled-css">Importing Compiled CSS</h3>
+<h3 id="importação-do-css-compilado">Importação do CSS compilado</h3>
 
-<p>Alternatively, you may use Bootstrap’s ready-to-use CSS by simply adding this line to your project’s entry point:</p>
+<p>Opcionalmente, você pode usar o CSS Bootstrap pronto para uso, simplesmente, adicionando esta linha ao <em>entry point</em> do seu projeto:</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="k">import</span> <span class="s1">'bootstrap/dist/css/bootstrap.min.css'</span><span class="p">;</span></code></pre></figure>
 
-<p>In this case you may use your existing rule for <code class="highlighter-rouge">css</code> without any special modifications to webpack config, except you don’t need <code class="highlighter-rouge">sass-loader</code> just <a href="https://github.com/webpack-contrib/style-loader">style-loader</a> and <a href="https://github.com/webpack-contrib/css-loader">css-loader</a>.</p>
+<p>Neste caso, você pode usar suas regras <code class="highlighter-rouge">CSS</code> sem nenhuma modificação especial nas configurações webpack. Assim, você não precisa do <code class="highlighter-rouge">sass-loader</code>, apenas do <a href="https://github.com/webpack-contrib/style-loader">style-loader</a> e <a href="https://github.com/webpack-contrib/css-loader">css-loader</a>.</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js">  <span class="p">...</span>
   <span class="nx">module</span><span class="p">:</span> <span class="p">{</span>
