@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Bring Bootstrap to life with our optional JavaScript plugins built on jQuery. Learn about each plugin, our data and programmatic API options, and more.">
+<meta name="description" content="Traga o Bootstrap a vida com nossos plugins opcionais, construídos com jQuery. Aprenda sobre cada plugin, nossos dados e API programática, entre outras coisas.">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Jekyll v3.7.3">
 
@@ -36,13 +36,13 @@
 <meta name="twitter:site" content="@getbootstrap">
 <meta name="twitter:creator" content="@getbootstrap">
 <meta name="twitter:title" content="JavaScript">
-<meta name="twitter:description" content="Bring Bootstrap to life with our optional JavaScript plugins built on jQuery. Learn about each plugin, our data and programmatic API options, and more.">
+<meta name="twitter:description" content="Traga o Bootstrap a vida com nossos plugins opcionais, construídos com jQuery. Aprenda sobre cada plugin, nossos dados e API programática, entre outras coisas.">
 <meta name="twitter:image" content="http://getbootstrap.com.br/assets/brand/bootstrap-social-logo.png">
 
 <!-- Facebook -->
 <meta property="og:url" content="http://getbootstrap.com.br/docs/4.1/getting-started/javascript/">
 <meta property="og:title" content="JavaScript">
-<meta property="og:description" content="Bring Bootstrap to life with our optional JavaScript plugins built on jQuery. Learn about each plugin, our data and programmatic API options, and more.">
+<meta property="og:description" content="Traga o Bootstrap a vida com nossos plugins opcionais, construídos com jQuery. Aprenda sobre cada plugin, nossos dados e API programática, entre outras coisas.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="http://getbootstrap.com.br/assets/brand/bootstrap-social.png">
 <meta property="og:image:secure_url" content="http://getbootstrap.com.br/assets/brand/bootstrap-social.png">
@@ -385,19 +385,19 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#individual-or-compiled">Individual or compiled</a></li>
-<li class="toc-entry toc-h2"><a href="#dependencies">Dependencies</a></li>
-<li class="toc-entry toc-h2"><a href="#data-attributes">Data attributes</a></li>
-<li class="toc-entry toc-h2"><a href="#events">Events</a></li>
-<li class="toc-entry toc-h2"><a href="#programmatic-api">Programmatic API</a>
+<li class="toc-entry toc-h2"><a href="#individualmente-ou-compilado">Individualmente ou compilado</a></li>
+<li class="toc-entry toc-h2"><a href="#dependências">Dependências</a></li>
+<li class="toc-entry toc-h2"><a href="#atributos-data">Atributos data</a></li>
+<li class="toc-entry toc-h2"><a href="#eventos">Eventos</a></li>
+<li class="toc-entry toc-h2"><a href="#api-programática">API programática</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#asynchronous-functions-and-transitions">Asynchronous functions and transitions</a></li>
-<li class="toc-entry toc-h3"><a href="#default-settings">Default settings</a></li>
+<li class="toc-entry toc-h3"><a href="#funções-e-transições-assíncronas">Funções e transições assíncronas</a></li>
+<li class="toc-entry toc-h3"><a href="#configurações-padrões">Configurações padrões</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#no-conflict">No conflict</a></li>
-<li class="toc-entry toc-h2"><a href="#version-numbers">Version numbers</a></li>
-<li class="toc-entry toc-h2"><a href="#no-special-fallbacks-when-javascript-is-disabled">No special fallbacks when JavaScript is disabled</a></li>
+<li class="toc-entry toc-h2"><a href="#sem-conflitos">Sem conflitos</a></li>
+<li class="toc-entry toc-h2"><a href="#número-de-versões">Número de versões</a></li>
+<li class="toc-entry toc-h2"><a href="#javascript-desativado">JavaScript desativado</a></li>
 <li class="toc-entry toc-h2"><a href="#util">Util</a></li>
 </ul>
           </div>
@@ -405,113 +405,113 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">JavaScript</h1>
-          <p class="bd-lead">Bring Bootstrap to life with our optional JavaScript plugins built on jQuery. Learn about each plugin, our data and programmatic API options, and more.</p>
+          <p class="bd-lead">Traga o Bootstrap a vida com nossos plugins opcionais, construídos com jQuery. Aprenda sobre cada plugin, nossos dados e API programática, entre outras coisas.</p>
           <!-- <script async src="https://cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=getbootstrapcom" id="_carbonads_js"></script> -->
 
-          <h2 id="individual-or-compiled">Individual or compiled</h2>
+          <h2 id="individualmente-ou-compilado">Individualmente ou compilado</h2>
 
-<p>Plugins can be included individually (using Bootstrap’s individual <code class="highlighter-rouge">*.js</code> files), or all at once using <code class="highlighter-rouge">bootstrap.js</code> or the minified <code class="highlighter-rouge">bootstrap.min.js</code> (don’t include both).</p>
+<p>Plugins podem ser incluídos individualmente, usando os arquivos Bootstrap <code class="highlighter-rouge">*.js</code> individuais. Também é possível incluir todos de uma vez, usando <code class="highlighter-rouge">bootstrap.js</code> ou a versão minificada <code class="highlighter-rouge">bootstrap.min.js</code>.</p>
 
-<h2 id="dependencies">Dependencies</h2>
+<h2 id="dependências">Dependências</h2>
 
-<p>Some plugins and CSS components depend on other plugins. If you include plugins individually, make sure to check for these dependencies in the docs. Also note that <strong>all plugins depend on jQuery</strong> (this means jQuery must be included <strong>before</strong> the plugin files). <a href="https://github.com/bootstrapbrasil/bootstrap/blob/v4.1.0/package.json">Consult our <code class="highlighter-rouge">package.json</code></a> to see which versions of jQuery are supported.</p>
+<p>Alguns plugins e componentes CSS dependem de outros plugins. Se você incluir plugins individualmente, tenha certeza de ler sobre estas dependências, na documentação. Também perceba que <strong>todos plugins dependem do jQuery</strong>, significando que esta biblioteca deve ser adicionada <strong>antes</strong> dos arquivos dos plugins. <a href="https://github.com/bootstrapbrasil/bootstrap/blob/v4.1.0/package.json">Consulte o <code class="highlighter-rouge">package.json</code></a> para ver quais versões do jQuery são suportadas.</p>
 
-<p>Our dropdowns, popovers and tooltips also depend on <a href="https://popper.js.org/">Popper.js</a>.</p>
+<p>Nossos dropdowns, popovers e tooltips também dependem do <a href="https://popper.js.org/">Popper.js</a>.</p>
 
-<h2 id="data-attributes">Data attributes</h2>
+<h2 id="atributos-data">Atributos data</h2>
 
-<p>Nearly all Bootstrap plugins can be enabled and configured through HTML alone with data attributes (our preferred way of using JavaScript functionality). Be sure to <strong>only use one set of data attributes on a single element</strong> (e.g., you cannot trigger a tooltip and modal from the same button.)</p>
+<p>Quase todos plugins Bootstrap podem ser ativados e configurados somente através do HTML, usando atributos data (nosso jeito preferido de usar essa funcionalidade JavaScript). Assegure-se de <strong>usar apenas um atributo data</strong>, por elemento. Exemplo: você não pode acionar um tooltip e um modal, usando o mesmo botão.</p>
 
-<p>However, in some situations it may be desirable to disable this functionality. To disable the data attribute API, unbind all events on the document namespaced with <code class="highlighter-rouge">data-api</code> like so:</p>
+<p>No entanto, em algumas situações você pode querer desativar esta funcionalidade. Para desativar a API do atributo data, você pode desvincular todos eventos no documento nomeados com <code class="highlighter-rouge">data-api</code>, fazendo algo como isso:</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">off</span><span class="p">(</span><span class="s1">'.data-api'</span><span class="p">)</span></code></pre></figure>
 
-<p>Alternatively, to target a specific plugin, just include the plugin’s name as a namespace along with the data-api namespace like this:</p>
+<p>Opcionalmente, para desvincular um plugin específico, basta usar o <em>namespace</em> do plugin seguido do <em>namespace</em> data-api, como isso:</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">off</span><span class="p">(</span><span class="s1">'.alert.data-api'</span><span class="p">)</span></code></pre></figure>
 
 <div class="bd-callout bd-callout-warning">
-<h5 id="escaping-selectors">Escaping selectors</h5>
-<p>If you use special selectors, for example: <code class="highlighter-rouge">collapse:Example</code>, be sure to escape them, because they’ll be passed through jQuery.</p>
+<h5 id="escapando-seletores">Escapando seletores</h5>
+<p>Se você usa algum tipo de seletor especial (como <code class="highlighter-rouge">collapse:Example</code>), se garanta de escapá-lo porque ele vai ser analisado pelo jQuery.</p>
 </div>
 
-<h2 id="events">Events</h2>
+<h2 id="eventos">Eventos</h2>
 
-<p>Bootstrap provides custom events for most plugins’ unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. <code class="highlighter-rouge">show</code>) is triggered at the start of an event, and its past participle form (ex. <code class="highlighter-rouge">shown</code>) is triggered on the completion of an action.</p>
+<p>Bootstrap provê eventos customizados para a maioria das ações dos plugins. Geralmente, eles aparecem no infinitivo ou passado particípio, onde o infinitivo (<code class="highlighter-rouge">show</code>, por exemplo) é acionado no começo de um evento e sua forma no passado particípio (<code class="highlighter-rouge">shown</code>) é acionada no final de uma ação.</p>
 
-<p>All infinitive events provide <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault"><code class="highlighter-rouge">preventDefault()</code></a> functionality. This provides the ability to stop the execution of an action before it starts. Returning false from an event handler will also automatically call <code class="highlighter-rouge">preventDefault()</code>.</p>
+<p>Todos eventos no infinitivo possuem a funcionalidade <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault"><code class="highlighter-rouge">preventDefault()</code></a>. Assim, tem-se a habilidade de parar a execução de uma ação, antes que ela começe. Retornar <code class="highlighter-rouge">false</code> em um evento também vai invocar o método <code class="highlighter-rouge">preventDefault()</code>, automaticamente.</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'show.bs.modal'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">data</span><span class="p">)</span> <span class="k">return</span> <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span> <span class="c1">// stops modal from being shown</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">data</span><span class="p">)</span> <span class="k">return</span> <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span> <span class="c1">// Evita que o modal apareça</span>
 <span class="p">})</span></code></pre></figure>
 
-<h2 id="programmatic-api">Programmatic API</h2>
+<h2 id="api-programática">API programática</h2>
 
-<p>We also believe you should be able to use all Bootstrap plugins purely through the JavaScript API. All public APIs are single, chainable methods, and return the collection acted upon.</p>
+<p>Nós também acreditamos que você será capaz de usar todos plugins Bootstrap, somente usando a API JavaScript. Todas APIs públicas são métodos encadeáveis e peculiares, além de retornarem a coleção que analisaram.</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'.btn.danger'</span><span class="p">).</span><span class="nx">button</span><span class="p">(</span><span class="s1">'toggle'</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">'fat'</span><span class="p">)</span></code></pre></figure>
 
-<p>All methods should accept an optional options object, a string which targets a particular method, or nothing (which initiates a plugin with default behavior):</p>
+<p>Todos métodos devem aceitar um objeto options opcional, uma string que olha por um método específico ou nada (oquê inicia o comportamento padrão dos plugins):</p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span class="p">).</span><span class="nx">modal</span><span class="p">()</span>                      <span class="c1">// initialized with defaults</span>
-<span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span class="p">).</span><span class="nx">modal</span><span class="p">({</span> <span class="na">keyboard</span><span class="p">:</span> <span class="kc">false</span> <span class="p">})</span>   <span class="c1">// initialized with no keyboard</span>
-<span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">'show'</span><span class="p">)</span>                <span class="c1">// initializes and invokes show immediately</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span class="p">).</span><span class="nx">modal</span><span class="p">()</span>                      <span class="c1">// inicia com padrões</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span class="p">).</span><span class="nx">modal</span><span class="p">({</span> <span class="na">keyboard</span><span class="p">:</span> <span class="kc">false</span> <span class="p">})</span>   <span class="c1">// inicia sem teclado</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">'show'</span><span class="p">)</span>                <span class="c1">// inicia e invoca show, imediatamente.</span></code></pre></figure>
 
-<p>Each plugin also exposes its raw constructor on a <code class="highlighter-rouge">Constructor</code> property: <code class="highlighter-rouge">$.fn.popover.Constructor</code>. If you’d like to get a particular plugin instance, retrieve it directly from an element: <code class="highlighter-rouge">$('[rel="popover"]').data('popover')</code>.</p>
+<p>Cada plugin também expõe seu construtor na propriedade <code class="highlighter-rouge">Constructor</code> (<code class="highlighter-rouge">$.fn.popover.Constructor</code>). Se você quer de obter uma instância específica de um plugin, recupere-a de um elemento (<code class="highlighter-rouge">$('[rel="popover"]').data('popover')</code>), diretamente.</p>
 
-<h3 id="asynchronous-functions-and-transitions">Asynchronous functions and transitions</h3>
+<h3 id="funções-e-transições-assíncronas">Funções e transições assíncronas</h3>
 
-<p>All programmatic API methods are <strong>asynchronous</strong> and returns to the caller once the transition is started but <strong>before it ends</strong>.</p>
+<p>Todos métodos de API programáticas são <strong>assíncronos</strong> e retornam o invocador, uma vez que a transição é iniciada (<strong>mas é antes que ela finalize</strong>).</p>
 
-<p>In order to execute an action once the transition is complete, you can listen to the corresponding event.</p>
+<p>Para executar uma ação quando a transição é finalizada, você pode “ouvir” o evento correspondente.</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myCollapse'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'shown.bs.collapse'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">// Action to execute once the collapsible area is expanded</span>
+  <span class="c1">// Ação a executar, uma vez que a área colapsável é expandida</span>
 <span class="p">})</span></code></pre></figure>
 
-<p>In addition a method call on a <strong>transitioning component will be ignored</strong>.</p>
+<p>Além disso, a invocação de método <strong>num componente em transição</strong> vai ser ignorada.</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myCarousel'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'slid.bs.carousel'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">$</span><span class="p">(</span><span class="s1">'#myCarousel'</span><span class="p">).</span><span class="nx">carousel</span><span class="p">(</span><span class="s1">'2'</span><span class="p">)</span> <span class="c1">// Will slide to the slide 2 as soon as the transition to slide 1 is finished</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'#myCarousel'</span><span class="p">).</span><span class="nx">carousel</span><span class="p">(</span><span class="s1">'2'</span><span class="p">)</span> <span class="c1">// Vai deslizar para o slide 2, antes que a transição do slide 1 finalize</span>
 <span class="p">})</span>
 
-<span class="nx">$</span><span class="p">(</span><span class="s1">'#myCarousel'</span><span class="p">).</span><span class="nx">carousel</span><span class="p">(</span><span class="s1">'1'</span><span class="p">)</span> <span class="c1">// Will start sliding to the slide 1 and returns to the caller</span>
-<span class="nx">$</span><span class="p">(</span><span class="s1">'#myCarousel'</span><span class="p">).</span><span class="nx">carousel</span><span class="p">(</span><span class="s1">'2'</span><span class="p">)</span> <span class="c1">// !! Will be ignored, as the transition to the slide 1 is not finished !!</span></code></pre></figure>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#myCarousel'</span><span class="p">).</span><span class="nx">carousel</span><span class="p">(</span><span class="s1">'1'</span><span class="p">)</span> <span class="c1">// Vai começar deslizando para o slide 1 e retornará o invocador</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#myCarousel'</span><span class="p">).</span><span class="nx">carousel</span><span class="p">(</span><span class="s1">'2'</span><span class="p">)</span> <span class="c1">// !! Vai ser ignorado, já que a transição para o slide 1 ainda não finalizou !!</span></code></pre></figure>
 
-<h3 id="default-settings">Default settings</h3>
+<h3 id="configurações-padrões">Configurações padrões</h3>
 
-<p>You can change the default settings for a plugin by modifying the plugin’s <code class="highlighter-rouge">Constructor.Default</code> object:</p>
+<p>Você pode alterar as configurações padrões de um plugin, modificado o objeto <code class="highlighter-rouge">Constructor.Default</code> do plugin:</p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">modal</span><span class="p">.</span><span class="nx">Constructor</span><span class="p">.</span><span class="nx">Default</span><span class="p">.</span><span class="nx">keyboard</span> <span class="o">=</span> <span class="kc">false</span> <span class="c1">// changes default for the modal plugin's `keyboard` option to false</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">modal</span><span class="p">.</span><span class="nx">Constructor</span><span class="p">.</span><span class="nx">Default</span><span class="p">.</span><span class="nx">keyboard</span> <span class="o">=</span> <span class="kc">false</span> <span class="c1">// altera o default da opção `keyboard` do plugin modal para `false`</span></code></pre></figure>
 
-<h2 id="no-conflict">No conflict</h2>
+<h2 id="sem-conflitos">Sem conflitos</h2>
 
-<p>Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call <code class="highlighter-rouge">.noConflict</code> on the plugin you wish to revert the value of.</p>
+<p>Algumas vezes, pode ser necessário usar plugins Bootstrap com outros frameworks UI. nestas circunstâncias, colisões de <em>namespace</em> podem ocorrer, ocasionalmente. Se isso acontecer, você pode invocar <code class="highlighter-rouge">.noconflict</code> no plugin que você quiser reverter o valor.</p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">bootstrapButton</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">button</span><span class="p">.</span><span class="nx">noConflict</span><span class="p">()</span> <span class="c1">// return $.fn.button to previously assigned value</span>
-<span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">bootstrapBtn</span> <span class="o">=</span> <span class="nx">bootstrapButton</span>            <span class="c1">// give $().bootstrapBtn the Bootstrap functionality</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">bootstrapButton</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">button</span><span class="p">.</span><span class="nx">noConflict</span><span class="p">()</span> <span class="c1">// retorna $.fn.button para o valor declarado anteriormente</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">bootstrapBtn</span> <span class="o">=</span> <span class="nx">bootstrapButton</span>            <span class="c1">// dá a funcionalidade Bootstrap ao $().bootstrapBtn</span></code></pre></figure>
 
-<h2 id="version-numbers">Version numbers</h2>
+<h2 id="número-de-versões">Número de versões</h2>
 
-<p>The version of each of Bootstrap’s jQuery plugins can be accessed via the <code class="highlighter-rouge">VERSION</code> property of the plugin’s constructor. For example, for the tooltip plugin:</p>
+<p>A versão de cada plugin Bootstrap feito com jQuery pode ser acessada usando a propriedade <code class="highlighter-rouge">VERSION</code> do construtor do plugin. Por exemplo, usando o plugin tooltip:</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">tooltip</span><span class="p">.</span><span class="nx">Constructor</span><span class="p">.</span><span class="nx">VERSION</span> <span class="c1">// =&gt; "4.1.0"</span></code></pre></figure>
 
-<h2 id="no-special-fallbacks-when-javascript-is-disabled">No special fallbacks when JavaScript is disabled</h2>
+<h2 id="javascript-desativado">JavaScript desativado</h2>
 
-<p>Bootstrap’s plugins don’t fall back particularly gracefully when JavaScript is disabled. If you care about the user experience in this case, use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript"><code class="highlighter-rouge">&lt;noscript&gt;</code></a> to explain the situation (and how to re-enable JavaScript) to your users, and/or add your own custom fallbacks.</p>
+<p>Os plugins Bootstrap não possuem um fallback muito bom, quando o JavaScript está desativado. Se você se importa com a experiência do usuário, neste caso, use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript"><code class="highlighter-rouge">&lt;noscript&gt;</code></a> para explicar a situação, como reativar o JavaScript e/ou adicionar seus próprios fallbacks.</p>
 
 <div class="bd-callout bd-callout-warning">
-<h5 id="third-party-libraries">Third-party libraries</h5>
+<h5 id="bibliotecas-de-terceiros">Bibliotecas de terceiros</h5>
 
-<p><strong>Bootstrap does not officially support third-party JavaScript libraries</strong> like Prototype or jQuery UI. Despite <code class="highlighter-rouge">.noConflict</code> and namespaced events, there may be compatibility problems that you need to fix on your own.</p>
+<p><strong>Bootstrap não suporta biblioteca de terceiros</strong>, oficialmente, como Prototype ou jQuery UI. Tirando o <code class="highlighter-rouge">.noConflict</code> e eventos com <em>namespace</em>, pode acontecer problemas de compatibilidade que você precisará consertar sozinho.</p>
 </div>
 
 <h2 id="util">Util</h2>
 
-<p>All Bootstrap’s JavaScript files depend on <code class="highlighter-rouge">util.js</code> and it has to be included alongside the other JavaScript files. If you’re using the compiled (or minified) <code class="highlighter-rouge">bootstrap.js</code>, there is no need to include this—it’s already there.</p>
+<p>Todos arquivos JavaScript Bootstrap dependem do <code class="highlighter-rouge">util.js</code>, fazendo com que seja necessário incluí-lo junto aos outros arquivos JavaScript. Se você está usando o <code class="highlighter-rouge">bootstrap.js</code> minificado, não há necessidade de incluir o <code class="highlighter-rouge">util.js</code> porque ele já está incluído no <code class="highlighter-rouge">bootstrap.min.js</code>.</p>
 
-<p><code class="highlighter-rouge">util.js</code> includes utility functions and a basic helper for <code class="highlighter-rouge">transitionEnd</code> events as well as a CSS transition emulator. It’s used by the other plugins to check for CSS transition support and to catch hanging transitions.</p>
+<p>O <code class="highlighter-rouge">util.js</code> possui funções utilitárias e ajuda básica para eventos <code class="highlighter-rouge">transitionEnd</code>, assim como um emulador de transição CSS. Isso é usado pelos outros plugins para conferir suporte de transições CSS e capturar transições suspensas.</p>
 
         </main>
       </div>
