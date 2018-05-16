@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Utilize variáveis Sass do Bootstrap 4 para construir fácilmente tema personalizado e customize componentes.">
+<meta name="description" content="Utilize variáveis Sass do Bootstrap 4 para construir, fácilmente, temas e componentes customizados.">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Jekyll v3.7.3">
 
-<title>Customização de tema Bootstrap · Bootstrap em Português</title>
+<title>Customização de temas Bootstrap · Bootstrap em Português</title>
 
 <!-- Bootstrap core CSS -->
 
@@ -35,14 +35,14 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@getbootstrap">
 <meta name="twitter:creator" content="@getbootstrap">
-<meta name="twitter:title" content="Customização de tema Bootstrap">
-<meta name="twitter:description" content="Utilize variáveis Sass do Bootstrap 4 para construir fácilmente tema personalizado e customize componentes.">
+<meta name="twitter:title" content="Customização de temas Bootstrap">
+<meta name="twitter:description" content="Utilize variáveis Sass do Bootstrap 4 para construir, fácilmente, temas e componentes customizados.">
 <meta name="twitter:image" content="http://getbootstrap.com.br/assets/brand/bootstrap-social-logo.png">
 
 <!-- Facebook -->
 <meta property="og:url" content="http://getbootstrap.com.br/docs/4.1/getting-started/theming/">
-<meta property="og:title" content="Customização de tema Bootstrap">
-<meta property="og:description" content="Utilize variáveis Sass do Bootstrap 4 para construir fácilmente tema personalizado e customize componentes.">
+<meta property="og:title" content="Customização de temas Bootstrap">
+<meta property="og:description" content="Utilize variáveis Sass do Bootstrap 4 para construir, fácilmente, temas e componentes customizados.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="http://getbootstrap.com.br/assets/brand/bootstrap-social.png">
 <meta property="og:image:secure_url" content="http://getbootstrap.com.br/assets/brand/bootstrap-social.png">
@@ -391,12 +391,12 @@
 <li class="toc-entry toc-h3"><a href="#estrutura-de-arquivos">Estrutura de arquivos</a></li>
 <li class="toc-entry toc-h3"><a href="#importando">Importando</a></li>
 <li class="toc-entry toc-h3"><a href="#variáveis-padrão">Variáveis padrão</a></li>
-<li class="toc-entry toc-h3"><a href="#mapas-and-loops">Mapas and loops</a>
+<li class="toc-entry toc-h3"><a href="#mapas-e-loops">Mapas e loops</a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#alterando-o-mapa">Alterando o mapa</a></li>
 <li class="toc-entry toc-h4"><a href="#adicionando-ao-mapa">Adicionando ao mapa</a></li>
 <li class="toc-entry toc-h4"><a href="#removendo-do-mapa">Removendo do mapa</a></li>
-<li class="toc-entry toc-h4"><a href="#required-keys">Required keys</a></li>
+<li class="toc-entry toc-h4"><a href="#chaves-obrigatórias">Chaves obrigatórias</a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h3"><a href="#funções">Funções</a></li>
@@ -408,7 +408,7 @@
 <ul>
 <li class="toc-entry toc-h3"><a href="#todas-as-cores">Todas as cores</a></li>
 <li class="toc-entry toc-h3"><a href="#cores-do-tema">Cores do tema</a></li>
-<li class="toc-entry toc-h3"><a href="#cinzas">Cinzas</a></li>
+<li class="toc-entry toc-h3"><a href="#tons-de-cinza">Tons de cinza</a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#componentes">Componentes</a>
@@ -421,7 +421,7 @@
 <ul>
 <li class="toc-entry toc-h3"><a href="#variáveis-disponíveis">Variáveis disponíveis</a></li>
 <li class="toc-entry toc-h3"><a href="#exemplos">Exemplos</a></li>
-<li class="toc-entry toc-h3"><a href="#breakpoint-variables">Breakpoint variables</a></li>
+<li class="toc-entry toc-h3"><a href="#variáveis-de-breakpoint">Variáveis de breakpoint</a></li>
 </ul>
 </li>
 </ul>
@@ -429,25 +429,25 @@
         
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
-          <h1 class="bd-title" id="content">Customização de tema Bootstrap</h1>
-          <p class="bd-lead">Utilize variáveis Sass do Bootstrap 4 para construir fácilmente tema personalizado e customize componentes.</p>
+          <h1 class="bd-title" id="content">Customização de temas Bootstrap</h1>
+          <p class="bd-lead">Utilize variáveis Sass do Bootstrap 4 para construir, fácilmente, temas e componentes customizados.</p>
           <!-- <script async src="https://cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=getbootstrapcom" id="_carbonads_js"></script> -->
 
           <h2 id="introdução">Introdução</h2>
 
-<p>In Bootstrap 3, theming was largely driven by variable overrides in LESS, custom CSS, and a separate theme stylesheet that we included in our <code class="highlighter-rouge">dist</code> files. With some effort, one could completely redesign the look of Bootstrap 3 without touching the core files. Bootstrap 4 provides a familiar, but slightly different approach.</p>
+<p>No Bootstrap 3, tematizações foram amplamente feitas com sobrescrição de variáveis LESS, CSS customizado e uma folha de estilos separada que nós incluíamos nos nossos arquivos <code class="highlighter-rouge">dist</code>. Com algum esforço, qualquer um podia redesenhar o visual do Bootstrap 3, sem tocar em seus principais arquivos. Já o Bootstrap 4 tem uma abordagem familiar, mas um pouco diferente.</p>
 
-<p>Now, theming is accomplished by Sass variables, Sass maps, and custom CSS. There’s no more dedicated theme stylesheet; instead, you can enable the built-in theme to add gradients, shadows, and more.</p>
+<p>Agora, tematizações são feitas com variáveis e mapas Sass, além de CSS customizado. Não existe mais, uma folha de estilos tema dedicada.</p>
 
 <h2 id="sass">Sass</h2>
 
-<p>Utilize nossos arquivos Sass fonte para aproveitar as variáveis, mapas, mixins e muito mais.</p>
+<p>Utilize nossos arquivos fonte Sass para aproveitar as variáveis, mapas, mixins e muito mais.</p>
 
 <h3 id="estrutura-de-arquivos">Estrutura de arquivos</h3>
 
-<p>Whenever possible, avoid modifying Bootstrap’s core files. For Sass, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it. Assuming you’re using a package manager like npm, you’ll have a file structure that looks like this:</p>
+<p>Sempre que possível, evite modificar os arquivos principais do Bootstrap. No Sass, isso significa que precisará criar sua própria folha de estilos e importar o Bootstrap, para que você possa modificar e extendê-lo. Assumindo que você usa um gerenciador de pacotes como o npm, terá uma estrutura de arquivos parecida com essa:</p>
 
-<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">your-project/
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">seu-projeto/
 ├── scss
 │   └── custom.scss
 └── node_modules/
@@ -455,9 +455,9 @@
         ├── js
         └── scss</code></pre></figure>
 
-<p>If you’ve downloaded our source files and aren’t using a package manager, you’ll want to manually setup something similar to that structure, keeping Bootstrap’s source files separate from your own.</p>
+<p>Se você baixou nossos arquivos fonte e não está usando um gerenciador de pacotes, vai querer fazer algo semelhante a essa estrutura, manualmente, mantendo os arquivos fontes separados dos seus.</p>
 
-<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">your-project/
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">seu-projeto/
 ├── scss
 │   └── custom.scss
 └── bootstrap/
@@ -466,58 +466,58 @@
 
 <h3 id="importando">Importando</h3>
 
-<p>In your <code class="highlighter-rouge">custom.scss</code>, you’ll import Bootstrap’s source Sass files. You have two options: include all of Bootstrap, or pick the parts you need. We encourage the latter, though be aware there are some requirements and dependencies across our components. You also will need to include some JavaScript for our plugins.</p>
+<p>No seu <code class="highlighter-rouge">custom.scss</code>, você vai importar os arquivos Sass Bootstrap. Nesse sentido, você terá duas opções: incluir todo o Bootstrap ou apenas as partes que você precisa. Nós encorajamos que pegue somente aquilo que necessite, mas fique atento que há alguns requisitos e dependências, nos componentes. Você também vai precisar adicionar alguns JavaScripts para nossos plugins.</p>
 
 <figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Custom.scss</span>
-<span class="c1">// Option A: Include all of Bootstrap</span>
+<span class="c1">// Opção A: Importa todo o Bootstrap</span>
 
 <span class="k">@import</span> <span class="s2">"node_modules/bootstrap/scss/bootstrap"</span><span class="p">;</span></code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Custom.scss</span>
-<span class="c1">// Option B: Include parts of Bootstrap</span>
+<span class="c1">// Opção B: Importa partes do Bootstrap</span>
 
-<span class="c1">// Required</span>
+<span class="c1">// Partes obrigatórias</span>
 <span class="k">@import</span> <span class="s2">"node_modules/bootstrap/scss/functions"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s2">"node_modules/bootstrap/scss/variables"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s2">"node_modules/bootstrap/scss/mixins"</span><span class="p">;</span>
 
-<span class="c1">// Optional</span>
+<span class="c1">// Partes opcionais</span>
 <span class="k">@import</span> <span class="s2">"node_modules/bootstrap/scss/reboot"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s2">"node_modules/bootstrap/scss/type"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s2">"node_modules/bootstrap/scss/images"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s2">"node_modules/bootstrap/scss/code"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s2">"node_modules/bootstrap/scss/grid"</span><span class="p">;</span></code></pre></figure>
 
-<p>With that setup in place, you can begin to modify any of the Sass variables and maps in your <code class="highlighter-rouge">custom.scss</code>. You can also start to add parts of Bootstrap under the <code class="highlighter-rouge">// Optional</code> section as needed. We suggest using the full import stack from our <code class="highlighter-rouge">bootstrap.scss</code> file as your starting point.</p>
+<p>Com essa configuração, você pode começar a modificar quaisquer variáveis e mapas Sass, no seu <code class="highlighter-rouge">custom.scss</code>. Você também pode começar a adicionar partes do Bootstrap, abaixo do comentário “<code class="highlighter-rouge">// Partes adicionais</code>”, sempre que necessário. Nós sugerimos usar toda a pilha de importação do nosso arquivo <code class="highlighter-rouge">bootstrap.scss</code>, como seu ponto inicial.</p>
 
 <h3 id="variáveis-padrão">Variáveis padrão</h3>
 
-<p>Every Sass variable in Bootstrap 4 includes the <code class="highlighter-rouge">!default</code> flag allowing you to override the variable’s default value in your own Sass without modifying Bootstrap’s source code. Copy and paste variables as needed, modify their values, and remove the <code class="highlighter-rouge">!default</code> flag. If a variable has already been assigned, then it won’t be re-assigned by the default values in Bootstrap.</p>
+<p>Toda variável Sass no Bootstrap 4 possui uma <em>flag</em> <code class="highlighter-rouge">!default</code>, permitindo que você sobrescreva o valor da variável padrão, no seu próprio Sass, sem modificar o código fonte Bootstrap. Copie, cole e modifique os valores das variáveis, sempre que precisar. Sem falar que você também pode remover a flag <code class="highlighter-rouge">!default</code> de variáveis. Se uma variável já recebeu um valor, então, ela não vai ter uma nova atribuição de valores padrões Bootstrap.</p>
 
-<p>You will find the complete list of Bootstrap’s variables in <code class="highlighter-rouge">scss/_variables.scss</code>.</p>
+<p>Você vai achar uma lista completa das variáveis Bootstrap, no diretório <code class="highlighter-rouge">scss/_variables.scss</code>.</p>
 
-<p>Variable overrides within the same Sass file can come before or after the default variables. However, when overriding across Sass files, your overrides must come before you import Bootstrap’s Sass files.</p>
+<p>Sobrescrição de variáveis dentro do mesmo arquivo Sass pode acontecer antes ou depois das variáveis padrões. Contudo, quando for fazer sobrescrições em arquivos Sass, suas sobrescrições devem vir antes de você importar arquivos Sass do Bootstrap.</p>
 
-<p>Here’s an example that changes the <code class="highlighter-rouge">background-color</code> and <code class="highlighter-rouge">color</code> for the <code class="highlighter-rouge">&lt;body&gt;</code> when importing and compiling Bootstrap via npm:</p>
+<p>Aqui vai um exemplo que muda as propriedades <code class="highlighter-rouge">background-color</code> e <code class="highlighter-rouge">color</code> do <code class="highlighter-rouge">&lt;body&gt;</code>, quando for importar e compilar Bootstrap via npm:</p>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Your variable overrides</span>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Suas sobrescrições de variáveis</span>
 <span class="nv">$body-bg</span><span class="p">:</span> <span class="mh">#000</span><span class="p">;</span>
 <span class="nv">$body-color</span><span class="p">:</span> <span class="mh">#111</span><span class="p">;</span>
 
-<span class="c1">// Bootstrap and its default variables</span>
+<span class="c1">//Bootstrap e suas variáveis padrões</span>
 <span class="k">@import</span> <span class="s2">"node_modules/bootstrap/scss/bootstrap"</span><span class="p">;</span></code></pre></figure>
 
-<p>Repeat as necessary for any variable in Bootstrap, including the global options below.</p>
+<p>Faça isso o quanto quiser, para qualquer variável Bootstrap, incluindo a opção global abaixo.</p>
 
-<h3 id="mapas-and-loops">Mapas and loops</h3>
+<h3 id="mapas-e-loops">Mapas e loops</h3>
 
-<p>Bootstrap 4 includes a handful of Sass maps, key value pairs that make it easier to generate families of related CSS. We use Sass maps for our colors, grid breakpoints, and more. Just like Sass variables, all Sass maps include the <code class="highlighter-rouge">!default</code> flag and can be overridden and extended.</p>
+<p>Bootstrap 4 possui um punhado de mapas Sass, os quais são pares de chave-valor que facilitam gerar famílias de CSS relacionados. Nós usamos mapas Sass para nossas cores, breakpoints grid e etc. Assim como as variáveis Sass, todos os mapas Sass possuem a <em>flag</em> <code class="highlighter-rouge">!default</code> e podem ser sobrescritos e extendidos.</p>
 
-<p>Some of our Sass maps are merged into empty ones by default. This is done to allow easy expansion of a given Sass map, but comes at the cost of making <em>removing</em> items from a map slightly more difficult.</p>
+<p>Alguns de nossos mapas Sass são fundidos em outros vazios, por padrão. Isto é feito para permitir uma fácil expansão de um dado mapa Sass, apesar de, consequentemente, ser um pouco mais difícil remover ítens de um mapa.</p>
 
 <h4 id="alterando-o-mapa">Alterando o mapa</h4>
 
-<p>To modify an existing color in our <code class="highlighter-rouge">$theme-colors</code> map, add the following to your custom Sass file:</p>
+<p>Para modificar uma cor existente no nosso mapa <code class="highlighter-rouge">$theme-colors</code>, você pode adicionar o seguinte ao seu arquivo Sass customizado:</p>
 
 <figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$theme-colors</span><span class="p">:</span> <span class="p">(</span>
   <span class="s2">"primary"</span><span class="o">:</span> <span class="mh">#0074d9</span><span class="o">,</span>
@@ -526,7 +526,7 @@
 
 <h4 id="adicionando-ao-mapa">Adicionando ao mapa</h4>
 
-<p>To add a new color to <code class="highlighter-rouge">$theme-colors</code>, add the new key and value:</p>
+<p>para adicionar uma nova cor ao <code class="highlighter-rouge">$theme-colors</code>, adicione a nova chave e valor:</p>
 
 <figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$theme-colors</span><span class="p">:</span> <span class="p">(</span>
   <span class="s2">"custom-color"</span><span class="o">:</span> <span class="mh">#900</span>
@@ -534,30 +534,30 @@
 
 <h4 id="removendo-do-mapa">Removendo do mapa</h4>
 
-<p>To remove colors from <code class="highlighter-rouge">$theme-colors</code>, or any other map, use <code class="highlighter-rouge">map-remove</code>. Be aware you must insert it between our requirements and options:</p>
+<p>Para remover cores do <code class="highlighter-rouge">$theme-colors</code> ou qualquer outro mapa, use <code class="highlighter-rouge">map-remove</code>. No entanto, certifique-se de inserir isso entre as partes obrigatórias e opcionais:</p>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Required</span>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Partes obrigatórias</span>
 <span class="k">@import</span> <span class="s2">"node_modules/bootstrap/scss/functions"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s2">"node_modules/bootstrap/scss/variables"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s2">"node_modules/bootstrap/scss/mixins"</span><span class="p">;</span>
 
 <span class="nv">$theme-colors</span><span class="p">:</span> <span class="nf">map-remove</span><span class="p">(</span><span class="nv">$theme-colors</span><span class="o">,</span> <span class="s2">"info"</span><span class="o">,</span> <span class="s2">"light"</span><span class="o">,</span> <span class="s2">"dark"</span><span class="p">);</span>
 
-<span class="c1">// Optional</span>
+<span class="c1">// Partes adicionais</span>
 <span class="k">@import</span> <span class="s2">"node_modules/bootstrap/scss/root"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s2">"node_modules/bootstrap/scss/reboot"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s2">"node_modules/bootstrap/scss/type"</span><span class="p">;</span>
 <span class="nc">...</span></code></pre></figure>
 
-<h4 id="required-keys">Required keys</h4>
+<h4 id="chaves-obrigatórias">Chaves obrigatórias</h4>
 
-<p>Bootstrap assumes the presence of some specific keys within Sass maps as we used and extend these ourselves. As you customize the included maps, you may encounter errors where a specific Sass map’s key is being used.</p>
+<p>Bootstrap espera que existam algumas chaves específicas, já que usamos e extendemos elas para construírmos o framework, nós mesmos. Por isso, assim que você for customizando os mapas, pode encontrar erros em que uma chave específica está sendo usada.</p>
 
-<p>For example, we use the <code class="highlighter-rouge">primary</code>, <code class="highlighter-rouge">success</code>, and <code class="highlighter-rouge">danger</code> keys from <code class="highlighter-rouge">$theme-colors</code> for links, buttons, and form states. Replacing the values of these keys should present no issues, but removing them may cause Sass compilation issues. In these instances, you’ll need to modify the Sass code that makes use of those values.</p>
+<p>Por exemplo, nós usamos as chaves <code class="highlighter-rouge">primary</code>, <code class="highlighter-rouge">success</code> e <code class="highlighter-rouge">danger</code> do mapa <code class="highlighter-rouge">$theme-colors</code>, para links, botões e estados de formulários. Substituir os valores dessas chaves não deve apresentar problemas, mas removê-las pode causar problemas na compilação Sass. Nesses casos, você precisará modificar o código Sass que faz uso destes valores.</p>
 
 <h3 id="funções">Funções</h3>
 
-<p>Bootstrap utilizes several Sass functions, but only a subset are applicable to general theming. We’ve included three functions for getting values from the color maps:</p>
+<p>Bootstrap usa diversas funções Sass, mas só algumas delas são aplicáveis em tematização. Nós usamos três funções para obter valores dos mapas de cores:</p>
 
 <figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@function</span> <span class="nf">color</span><span class="p">(</span><span class="nv">$key</span><span class="o">:</span> <span class="s2">"blue"</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">@return</span> <span class="nf">map-get</span><span class="p">(</span><span class="nv">$colors</span><span class="o">,</span> <span class="nv">$key</span><span class="p">);</span>
@@ -571,14 +571,14 @@
   <span class="k">@return</span> <span class="nf">map-get</span><span class="p">(</span><span class="nv">$grays</span><span class="o">,</span> <span class="nv">$key</span><span class="p">);</span>
 <span class="p">}</span></code></pre></figure>
 
-<p>These allow you to pick one color from a Sass map much like how you’d use a color variable from v3.</p>
+<p>Isso permite que obtenha uma cor de um mapa Sass, da mesma maneira que você usava uma variável de cor, na versão 3.</p>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.custom-element</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.elemento-personalizado</span> <span class="p">{</span>
   <span class="nl">color</span><span class="p">:</span> <span class="nf">gray</span><span class="p">(</span><span class="s2">"100"</span><span class="p">);</span>
   <span class="nl">background-color</span><span class="p">:</span> <span class="nf">theme-color</span><span class="p">(</span><span class="s2">"dark"</span><span class="p">);</span>
 <span class="p">}</span></code></pre></figure>
 
-<p>We also have another function for getting a particular <em>level</em> of color from the <code class="highlighter-rouge">$theme-colors</code> map. Negative level values will lighten the color, while higher levels will darken.</p>
+<p>Nós também temos outra função para recuperar um nível de cor específico do mapa <code class="highlighter-rouge">$theme-colors</code>. Níveis com valores negativos vão esclarecer a cor, enquanto níveis maiores vão escurecer.</p>
 
 <figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@function</span> <span class="nf">theme-color-level</span><span class="p">(</span><span class="nv">$color-name</span><span class="o">:</span> <span class="s2">"primary"</span><span class="o">,</span> <span class="nv">$level</span><span class="o">:</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
   <span class="nv">$color</span><span class="p">:</span> <span class="nf">theme-color</span><span class="p">(</span><span class="nv">$color-name</span><span class="p">);</span>
@@ -588,19 +588,19 @@
   <span class="k">@return</span> <span class="nf">mix</span><span class="p">(</span><span class="nv">$color-base</span><span class="o">,</span> <span class="nv">$color</span><span class="o">,</span> <span class="nv">$level</span> <span class="o">*</span> <span class="nv">$theme-color-interval</span><span class="p">);</span>
 <span class="p">}</span></code></pre></figure>
 
-<p>In practice, you’d call the function and pass in two parameters: the name of the color from <code class="highlighter-rouge">$theme-colors</code> (e.g., primary or danger) and a numeric level.</p>
+<p>Na prática, você chamaria a função e passaria dois argumentos: o nome da cor do <code class="highlighter-rouge">$theme-colors</code> (ex: primary e danger) e um valor numérico.</p>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.custom-element</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.elemento-personalizado</span> <span class="p">{</span>
   <span class="nl">color</span><span class="p">:</span> <span class="nf">theme-color-level</span><span class="p">(</span><span class="n">primary</span><span class="o">,</span> <span class="m">-10</span><span class="p">);</span>
 <span class="p">}</span></code></pre></figure>
 
-<p>Additional functions could be added in the future or your own custom Sass to create level functions for additional Sass maps, or even a generic one if you wanted to be more verbose.</p>
+<p>Outras funções podem ser adicionadas, futuramente, ou use seu próprio Sass para criar funções de nível para outros mapas Sass.</p>
 
 <h3 id="contraste-de-cor">Contraste de cor</h3>
 
-<p>One additional function we include in Bootstrap is the color contrast function, <code class="highlighter-rouge">color-yiq</code>. It utilizes the <a href="https://en.wikipedia.org/wiki/YIQ">YIQ color space</a> to automatically return a light (<code class="highlighter-rouge">#fff</code>) or dark (<code class="highlighter-rouge">#111</code>) contrast color based on the specified base color. This function is especially useful for mixins or loops where you’re generating multiple classes.</p>
+<p>Uma outra função que temos no Bootstrap é aquela para contraste de cores: <code class="highlighter-rouge">color-yiq</code>. Ela usa o <a href="https://en.wikipedia.org/wiki/YIQ">YIQ color space</a> para, automaticamente, retornar um contraste de cores claras (<code class="highlighter-rouge">#fff</code>) ou escuras (<code class="highlighter-rouge">#111</code>), baseado na cor especificada. Esta função é, especialmente, útil para mixins ou loops quando for gerar múltiplas classes.</p>
 
-<p>For example, to generate color swatches from our <code class="highlighter-rouge">$theme-colors</code> map:</p>
+<p>Por exemplo, para gerar amostras de cores a partir do nosso mapa <code class="highlighter-rouge">$theme-colors</code>, use isso:</p>
 
 <figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@each</span> <span class="nv">$color</span><span class="o">,</span> <span class="nv">$value</span> <span class="n">in</span> <span class="nv">$theme-colors</span> <span class="p">{</span>
   <span class="nc">.swatch-</span><span class="si">#{</span><span class="nv">$color</span><span class="si">}</span> <span class="p">{</span>
@@ -608,88 +608,88 @@
   <span class="p">}</span>
 <span class="p">}</span></code></pre></figure>
 
-<p>It can also be used for one-off contrast needs:</p>
+<p>Ela também pode ser usada para retornar o contraste de uma única cor:</p>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.custom-element</span> <span class="p">{</span>
-  <span class="nl">color</span><span class="p">:</span> <span class="nf">color-yiq</span><span class="p">(</span><span class="mh">#000</span><span class="p">);</span> <span class="c1">// returns `color: #fff`</span>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.elemento-personalizado</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nf">color-yiq</span><span class="p">(</span><span class="mh">#000</span><span class="p">);</span> <span class="c1">// retorna `color: #fff`</span>
 <span class="p">}</span></code></pre></figure>
 
-<p>You can also specify a base color with our color map functions:</p>
+<p>Você também pode especificar uma cor base, com nossas funções de mapa de cores:</p>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.custom-element</span> <span class="p">{</span>
-  <span class="nl">color</span><span class="p">:</span> <span class="nf">color-yiq</span><span class="p">(</span><span class="nf">theme-color</span><span class="p">(</span><span class="s2">"dark"</span><span class="p">));</span> <span class="c1">// returns `color: #fff`</span>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.elemento-personalizado</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nf">color-yiq</span><span class="p">(</span><span class="nf">theme-color</span><span class="p">(</span><span class="s2">"dark"</span><span class="p">));</span> <span class="c1">// retorna `color: #fff`</span>
 <span class="p">}</span></code></pre></figure>
 
 <h2 id="opções-do-sass">Opções do Sass</h2>
 
-<p>Customize Bootstrap 4 with our built-in custom variables file and easily toggle global CSS preferences with new <code class="highlighter-rouge">$enable-*</code> Sass variables. Override a variable’s value and recompile with <code class="highlighter-rouge">npm run test</code> as needed.</p>
+<p>Personalize o Bootstrap 4 com nosso arquivo customizado de variáveis e, facilmente, alterne configurações CSS globais com as novas variáveis Sass <code class="highlighter-rouge">$enable-*</code>. Sobrescreva o valor da variável e recompile com <code class="highlighter-rouge">npm run test</code>, sempre que precisar.</p>
 
-<p>You can find and customize these variables for key global options in Bootstrap’s <code class="highlighter-rouge">scss/_variables.scss</code> file.</p>
+<p>Você pode achar e personalizar estas variáveis para opções globais, no arquivo Bootstrap <code class="highlighter-rouge">scss/_variables.scss</code>.</p>
 
 <table>
   <thead>
     <tr>
-      <th>Variable</th>
-      <th>Values</th>
-      <th>Description</th>
+      <th>Variável</th>
+      <th>Valores</th>
+      <th>Descrição</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><code class="highlighter-rouge">$spacer</code></td>
-      <td><code class="highlighter-rouge">1rem</code> (default), or any value &gt; 0</td>
-      <td>Specifies the default spacer value to programmatically generate our <a href="/docs/4.1/utilities/spacing/">spacer utilities</a>.</td>
+      <td><code class="highlighter-rouge">1rem</code> é o padrão, mas também pode-se utilizar valores maior que 0.</td>
+      <td>Especifíca o valor padrão para gerar os <a href="/docs/4.1/utilities/spacing/">utilitário de espaçamento</a>, programaticamente.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">$enable-rounded</code></td>
-      <td><code class="highlighter-rouge">true</code> (default) or <code class="highlighter-rouge">false</code></td>
-      <td>Enables predefined <code class="highlighter-rouge">border-radius</code> styles on various components.</td>
+      <td><code class="highlighter-rouge">true</code> (padrão) ou <code class="highlighter-rouge">false</code></td>
+      <td>Ativa estilos <code class="highlighter-rouge">border-radius</code> pré-definidos, em vários componentes.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">$enable-shadows</code></td>
-      <td><code class="highlighter-rouge">true</code> or <code class="highlighter-rouge">false</code> (default)</td>
-      <td>Enables predefined <code class="highlighter-rouge">box-shadow</code> styles on various components.</td>
+      <td><code class="highlighter-rouge">true</code> ou <code class="highlighter-rouge">false</code> (padrão)</td>
+      <td>Ativa estilos <code class="highlighter-rouge">box-shadow</code> pré-definidos, em vários componentes.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">$enable-gradients</code></td>
-      <td><code class="highlighter-rouge">true</code> or <code class="highlighter-rouge">false</code> (default)</td>
-      <td>Enables predefined gradients via <code class="highlighter-rouge">background-image</code> styles on various components.</td>
+      <td><code class="highlighter-rouge">true</code> ou <code class="highlighter-rouge">false</code> (padrão)</td>
+      <td>Ativa gradientes pré-definidos via estilos <code class="highlighter-rouge">background-image</code>, em vários componentes.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">$enable-transitions</code></td>
-      <td><code class="highlighter-rouge">true</code> (default) or <code class="highlighter-rouge">false</code></td>
-      <td>Enables predefined <code class="highlighter-rouge">transition</code>s on various components.</td>
+      <td><code class="highlighter-rouge">true</code> (padrão) ou <code class="highlighter-rouge">false</code></td>
+      <td>Ativa <code class="highlighter-rouge">transições</code> pré-definidas, em vários componentes.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">$enable-hover-media-query</code></td>
-      <td><code class="highlighter-rouge">true</code> or <code class="highlighter-rouge">false</code> (default)</td>
-      <td><strong>Deprecated</strong></td>
+      <td><code class="highlighter-rouge">true</code> ou <code class="highlighter-rouge">false</code> (padrão)</td>
+      <td><strong>Defasado</strong></td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">$enable-grid-classes</code></td>
-      <td><code class="highlighter-rouge">true</code> (default) or <code class="highlighter-rouge">false</code></td>
-      <td>Enables the generation of CSS classes for the grid system (e.g., <code class="highlighter-rouge">.container</code>, <code class="highlighter-rouge">.row</code>, <code class="highlighter-rouge">.col-md-1</code>, etc.).</td>
+      <td><code class="highlighter-rouge">true</code> (padrão) ou <code class="highlighter-rouge">false</code></td>
+      <td>Ativa a geração de classes CSS para o grid (ex: <code class="highlighter-rouge">.container</code>, <code class="highlighter-rouge">.row</code>, <code class="highlighter-rouge">.col-md-1</code>, etc).</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">$enable-caret</code></td>
-      <td><code class="highlighter-rouge">true</code> (default) or <code class="highlighter-rouge">false</code></td>
-      <td>Enables pseudo element caret on <code class="highlighter-rouge">.dropdown-toggle</code>.</td>
+      <td><code class="highlighter-rouge">true</code> (padrão) ou <code class="highlighter-rouge">false</code></td>
+      <td>Ativa a setinha do <code class="highlighter-rouge">.dropdown-toggle</code> usando pseudo-elementos.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">$enable-print-styles</code></td>
-      <td><code class="highlighter-rouge">true</code> (default) or <code class="highlighter-rouge">false</code></td>
-      <td>Enables styles for optimizing printing.</td>
+      <td><code class="highlighter-rouge">true</code> (padrão) ou <code class="highlighter-rouge">false</code></td>
+      <td>Ativa estilos para otimizar impressões.</td>
     </tr>
   </tbody>
 </table>
 
 <h2 id="cor">Cor</h2>
 
-<p>Many of Bootstrap’s various components and utilities are built through a series of colors defined in a Sass map. This map can be looped over in Sass to quickly generate a series of rulesets.</p>
+<p>Muitos dos componentes e utilitários Bootstrap são construídos com uma série de cores definidas em mapas Sass. Estes mapas podem ser iterados para, rapidamente, gerar vários blocos de regras.</p>
 
 <h3 id="todas-as-cores">Todas as cores</h3>
 
-<p>All colors available in Bootstrap 4, are available as Sass variables and a Sass map in <code class="highlighter-rouge">scss/_variables.scss</code> file. This will be expanded upon in subsequent minor releases to add additional shades, much like the <a href="#grays">grayscale palette</a> we already include.</p>
+<p>Todas as cores disponíveis no Bootstrap 4 também estão disponíveis nas variáveis e no mapa Sass, dentro do arquivo <code class="highlighter-rouge">scss/_variables.scss</code>. Isso será expandido, nos próximos pequenos releases com tons adicionais, como a <a href="#grays">escala de cores cinzas</a> que já incluímos.</p>
 
 <div class="row">
   
@@ -761,23 +761,23 @@
   
 </div>
 
-<p>Here’s how you can use these in your Sass:</p>
+<p>É assim que você pode usar isso, no seu Sass:</p>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// With variable</span>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Com variáveis</span>
 <span class="nc">.alpha</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="nv">$purple</span><span class="p">;</span> <span class="p">}</span>
 
-<span class="c1">// From the Sass map with our `color()` function</span>
+<span class="c1">// Usando o mapa Sass, com nossa função `color()`</span>
 <span class="nc">.beta</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="nf">color</span><span class="p">(</span><span class="s2">"purple"</span><span class="p">);</span> <span class="p">}</span></code></pre></figure>
 
-<p><a href="/docs/4.1/utilities/colors/">Color utility classes</a> are also available for setting <code class="highlighter-rouge">color</code> and <code class="highlighter-rouge">background-color</code>.</p>
+<p><a href="/docs/4.1/utilities/colors/">Classes utilitárias de cores</a> também estão disponíveis para definir o valor de <code class="highlighter-rouge">color</code> e <code class="highlighter-rouge">background-color</code>.</p>
 
 <div class="bd-callout bd-callout-info">
-<p>In the future, we’ll aim to provide Sass maps and variables for shades of each color as we’ve done with the grayscale colors below.</p>
+<p>No futuro, vamos se concentrar em prover mapas e variáveis Sass para os tons de cada cor, assim como fizemos com a escala de cinza abaixo.</p>
 </div>
 
 <h3 id="cores-do-tema">Cores do tema</h3>
 
-<p>We use a subset of all colors to create a smaller color palette for generating color schemes, also available as Sass variables and a Sass map in Bootstraps’s <code class="highlighter-rouge">scss/_variables.scss</code> file.</p>
+<p>Usamos um subconjunto de todas as cores para criar uma paleta de cores menor e gerar um esquemas de cores, também disponíveis em variáveis e mapas Sass, no arquivo Bootstrap <code class="highlighter-rouge">scss/_variables.scss</code>.</p>
 
 <div class="row">
   
@@ -815,9 +815,9 @@
   
 </div>
 
-<h3 id="cinzas">Cinzas</h3>
+<h3 id="tons-de-cinza">Tons de cinza</h3>
 
-<p>An expansive set of gray variables and a Sass map in <code class="highlighter-rouge">scss/_variables.scss</code> for consistent shades of gray across your project.</p>
+<p>Um grande conjunto de variáveis e mapas Sass, no arquivo <code class="highlighter-rouge">scss/_variables.scss</code>, para tons de cinzas consistentes nos seus projetos.</p>
 
 <div class="row mb-3">
   <div class="col-md-4">
@@ -843,7 +843,7 @@
   </div>
 </div>
 
-<p>Within <code class="highlighter-rouge">scss/_variables.scss</code>, you’ll find Bootstrap’s color variables and Sass map. Here’s an example of the <code class="highlighter-rouge">$colors</code> Sass map:</p>
+<p>Dentro do arquivo  <code class="highlighter-rouge">scss/_variables.scss</code>, você vai achar as variáveis e mapas de cores Bootstrap. Aqui está um exemplo do mapa <code class="highlighter-rouge">$colors</code>:</p>
 
 <figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$colors</span><span class="p">:</span> <span class="p">(</span>
   <span class="s2">"blue"</span><span class="o">:</span> <span class="nv">$blue</span><span class="o">,</span>
@@ -861,33 +861,33 @@
   <span class="s2">"gray-dark"</span><span class="o">:</span> <span class="nv">$gray-800</span>
 <span class="p">)</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span></code></pre></figure>
 
-<p>Add, remove, or modify values within the map to update how they’re used in many other components. Unfortunately at this time, not <em>every</em> component utilizes this Sass map. Future updates will strive to improve upon this. Until then, plan on making use of the <code class="highlighter-rouge">${color}</code> variables and this Sass map.</p>
+<p>Adicione, remova ou modifique valores dentro do mapa, para atualizar o uso deles em outros componentes. Infelizmente, atualmente, <em>nem todos</em> componentes utiliza este mapa Sass. Futuras atualizações vão tentar melhorar essa situação. No entanto, até lá, planeje o uso deste mapa e de variáveis de cores.</p>
 
 <h2 id="componentes">Componentes</h2>
 
-<p>Many of Bootstrap’s components and utilities are built with <code class="highlighter-rouge">@each</code> loops that iterate over a Sass map. This is especially helpful for generating variants of a component by our <code class="highlighter-rouge">$theme-colors</code> and creating responsive variants for each breakpoint. As you customize these Sass maps and recompile, you’ll automatically see your changes reflected in these loops.</p>
+<p>Muitos componentes e utilitários Bootstrap são construídos com loops <code class="highlighter-rouge">@each</code>, os quais iteram sobre um mapa Sass. Isso é, especialmente, útil para gerar variantes de um componente com nosso <code class="highlighter-rouge">$theme-colors</code> e criando variantes responsivos para cada breakpoint. Assim que você personalizar estes mapas Sass e recompilar, verá suas mudanças refletidas nestes loops, automaticamente.</p>
 
 <h3 id="modificadores">Modificadores</h3>
 
-<p>Many of Bootstrap’s components are built with a base-modifier class approach. This means the bulk of the styling is contained to a base class (e.g., <code class="highlighter-rouge">.btn</code>) while style variations are confined to modifier classes (e.g., <code class="highlighter-rouge">.btn-danger</code>). These modifier classes are built from the <code class="highlighter-rouge">$theme-colors</code> map to make customizing the number and name of our modifier classes.</p>
+<p>Muitos dos componentes Bootstrap são construídos com uma abordagem de classe-modificadora. Isso significa que o grosso da estilização está em uma classe base (ex: <code class="highlighter-rouge">.btn</code>), enquanto variações de estilos estão em classes modificadoras, como <code class="highlighter-rouge">.btn-danger</code>. Estas classes modificadoras são feitas a partir do mapa <code class="highlighter-rouge">$theme-colors</code>, para personalizar a quantidade e nomes delas.</p>
 
-<p>Here are two examples of how we loop over the <code class="highlighter-rouge">$theme-colors</code> map to generate modifiers to the <code class="highlighter-rouge">.alert</code> component and all our <code class="highlighter-rouge">.bg-*</code> background utilities.</p>
+<p>Aqui está dois exemplos de como nós iteramos o mapa <code class="highlighter-rouge">$theme-colors</code> para gerar modificadores do componente <code class="highlighter-rouge">.alert</code> e todos nossos utilitários de background <code class="highlighter-rouge">.bg-*</code>.</p>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Generate alert modifier classes</span>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Gera classes modificadoras de alertas</span>
 <span class="k">@each</span> <span class="nv">$color</span><span class="o">,</span> <span class="nv">$value</span> <span class="n">in</span> <span class="nv">$theme-colors</span> <span class="p">{</span>
   <span class="nc">.alert-</span><span class="si">#{</span><span class="nv">$color</span><span class="si">}</span> <span class="p">{</span>
     <span class="k">@include</span> <span class="nd">alert-variant</span><span class="p">(</span><span class="nf">theme-color-level</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="m">-10</span><span class="p">)</span><span class="o">,</span> <span class="nf">theme-color-level</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="m">-9</span><span class="p">)</span><span class="o">,</span> <span class="nf">theme-color-level</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="m">6</span><span class="p">));</span>
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="c1">// Generate `.bg-*` color utilities</span>
+<span class="c1">// Gera utilitários de cores para `.bg-*`</span>
 <span class="k">@each</span> <span class="nv">$color</span><span class="o">,</span> <span class="nv">$value</span> <span class="n">in</span> <span class="nv">$theme-colors</span> <span class="p">{</span>
   <span class="k">@include</span> <span class="nd">bg-variant</span><span class="p">(</span><span class="s1">'.bg-</span><span class="si">#{</span><span class="nv">$color</span><span class="si">}</span><span class="s1">'</span><span class="o">,</span> <span class="nv">$value</span><span class="p">);</span>
 <span class="p">}</span></code></pre></figure>
 
 <h3 id="responsivo">Responsivo</h3>
 
-<p>These Sass loops aren’t limited to color maps, either. You can also generate responsive variations of your components or utilities. Take for example our responsive text alignment utilities where we mix an <code class="highlighter-rouge">@each</code> loop for the <code class="highlighter-rouge">$grid-breakpoints</code> Sass map with a media query include.</p>
+<p>Estes loops Sass não são limitados a mapas de cores. Você também pode gerar variações responsivas de seus componentes e utilitários. Por exemplo, pegue nossos utilitários para alinhamento de texto, onde nós misturamos um loop <code class="highlighter-rouge">@each</code> para o mapa Sass <code class="highlighter-rouge">$grid-breakpoins</code>, o qual possui integrações de media queries.</p>
 
 <figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@each</span> <span class="nv">$breakpoint</span> <span class="n">in</span> <span class="nf">map-keys</span><span class="p">(</span><span class="nv">$grid-breakpoints</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">@include</span> <span class="nd">media-breakpoint-up</span><span class="p">(</span><span class="nv">$breakpoint</span><span class="p">)</span> <span class="p">{</span>
@@ -899,15 +899,15 @@
   <span class="p">}</span>
 <span class="p">}</span></code></pre></figure>
 
-<p>Should you need to modify your <code class="highlighter-rouge">$grid-breakpoints</code>, your changes will apply to all the loops iterating over that map.</p>
+<p>Se precisar alterar seu <code class="highlighter-rouge">$grid-breakpoints</code>, suas modificações serão aplicadas a todos os loops iterando neste mapa.</p>
 
 <h2 id="variáveis-css">Variáveis CSS</h2>
 
-<p>Bootstrap 4 includes around two dozen <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables">CSS custom properties (variables)</a> in its compiled CSS. These provide easy access to commonly used values like our theme colors, breakpoints, and primary font stacks when working in your browser’s Inspector, a code sandbox, or general prototyping.</p>
+<p>Bootstrap 4 inclui cerca de duas dúzias de <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables">propriedades CSS personalizadas (variáveis)</a>, em seu CSS compilado. Elas provêm fácil acsso a valores comumente usados, como nossas cores de tema, breakpoints e pilhas de fontes primárias (para quando estiver trabalhando no inspetor do browser, sandbox de código ou uma prototipagem qualquer).</p>
 
 <h3 id="variáveis-disponíveis">Variáveis disponíveis</h3>
 
-<p>Here are the variables we include (note that the <code class="highlighter-rouge">:root</code> is required). They’re located in our <code class="highlighter-rouge">_root.scss</code> file.</p>
+<p>Aqui estão as variáveis que incluímos (perceba que o <code class="highlighter-rouge">:root</code> é obrigatório). Elas estão localizadas no nosso arquivo <code class="highlighter-rouge">_root.scss</code>.</p>
 
 <figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nd">:root</span> <span class="p">{</span>
   <span class="py">--blue</span><span class="p">:</span> <span class="m">#007bff</span><span class="p">;</span>
@@ -942,7 +942,7 @@
 
 <h3 id="exemplos">Exemplos</h3>
 
-<p>CSS variables offer similar flexibility to Sass’s variables, but without the need for compilation before being served to the browser. For example, here we’re resetting our page’s font and link styles with CSS variables.</p>
+<p>Variáveis CSS oferecem uma flexibilidade similar as do Sass, mas sem precisar compilar antes de usar no navegador. Por exemplo, com isso estamos resetando os estilos de fonte e links de nossa página, com variáveis CSS:</p>
 
 <figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">body</span> <span class="p">{</span>
   <span class="nl">font</span><span class="p">:</span> <span class="m">1rem</span><span class="p">/</span><span class="m">1.5</span> <span class="n">var</span><span class="p">(</span><span class="n">--font-family-sans-serif</span><span class="p">);</span>
@@ -951,20 +951,20 @@
   <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--blue</span><span class="p">);</span>
 <span class="p">}</span></code></pre></figure>
 
-<h3 id="breakpoint-variables">Breakpoint variables</h3>
+<h3 id="variáveis-de-breakpoint">Variáveis de breakpoint</h3>
 
-<p>While we originally included breakpoints in our CSS variables (e.g., <code class="highlighter-rouge">--breakpoint-md</code>), <strong>these are not supported in media queries</strong>, but they can still be used <em>within</em> rulesets in media queries. These breakpoint variables remain in the compiled CSS for backward compatibility given they can be utilized by JavaScript. <a href="https://www.w3.org/TR/css-variables-1/#using-variables">Learn more in the spec.</a></p>
+<p>Apesar de, originalmente, termos incluídos breakpoints em nossas variáveis CSS (ex: <code class="highlighter-rouge">--breakpoint-md</code>), <strong>elas não são suportadas dentro de media queries</strong>, mas ainda podem ser usadas dentro de bloco de regras, nas media queries. Estas variáveis de breakpoint permanecem no CSS compilado, para retro-compatibilidade (dado que podem ser utilizadas pelo JavaScript). <a href="https://www.w3.org/TR/css-variables-1/#using-variables">Leia mais na especificação</a>!</p>
 
-<p>Here’s an example of <strong>what’s not supported:</strong></p>
+<p>Aqui está um exemplo de <strong>oquê não é suportado:</strong></p>
 
 <figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--breakpoint-sm</span><span class="p">))</span> <span class="p">{</span>
   <span class="o">...</span>
 <span class="p">}</span></code></pre></figure>
 
-<p>And here’s an example of <strong>what is supported:</strong></p>
+<p>E aqui está um exemplo de <strong>oquê é suportado:</strong></p>
 
 <figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nc">.custom-element</span> <span class="p">{</span>
+  <span class="nc">.elemento-personalizado</span> <span class="p">{</span>
     <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--primary</span><span class="p">);</span>
   <span class="p">}</span>
 <span class="p">}</span></code></pre></figure>
