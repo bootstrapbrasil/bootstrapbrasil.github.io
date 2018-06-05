@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Quickly and easily clear floated content within a container by adding a clearfix utility.">
+<meta name="description" content="Rapido e facilmente usar a propriedade clear em elementos flutuando, usando o utilitário clearfix.">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Jekyll v3.7.3">
 
@@ -36,13 +36,13 @@
 <meta name="twitter:site" content="@getbootstrap">
 <meta name="twitter:creator" content="@getbootstrap">
 <meta name="twitter:title" content="Clearfix">
-<meta name="twitter:description" content="Quickly and easily clear floated content within a container by adding a clearfix utility.">
+<meta name="twitter:description" content="Rapido e facilmente usar a propriedade clear em elementos flutuando, usando o utilitário clearfix.">
 <meta name="twitter:image" content="http://getbootstrap.com.br/assets/brand/bootstrap-social-logo.png">
 
 <!-- Facebook -->
 <meta property="og:url" content="http://getbootstrap.com.br/docs/4.1/utilities/clearfix/">
 <meta property="og:title" content="Clearfix">
-<meta property="og:description" content="Quickly and easily clear floated content within a container by adding a clearfix utility.">
+<meta property="og:description" content="Rapido e facilmente usar a propriedade clear em elementos flutuando, usando o utilitário clearfix.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="http://getbootstrap.com.br/assets/brand/bootstrap-social.png">
 <meta property="og:image:secure_url" content="http://getbootstrap.com.br/assets/brand/bootstrap-social.png">
@@ -391,14 +391,14 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">Clearfix</h1>
-          <p class="bd-lead">Quickly and easily clear floated content within a container by adding a clearfix utility.</p>
+          <p class="bd-lead">Rapido e facilmente usar a propriedade clear em elementos flutuando, usando o utilitário clearfix.</p>
           <!-- <script async src="https://cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=getbootstrapcom" id="_carbonads_js"></script> -->
 
-          <p>Easily clear <code class="highlighter-rouge">float</code>s by adding <code class="highlighter-rouge">.clearfix</code> <strong>to the parent element</strong>. Can also be used as a mixin.</p>
+          <p>Facilmente limpa a <code class="highlighter-rouge">float</code>, usando a classe <code class="highlighter-rouge">.clearfix</code>, no <strong>elemento pai</strong>. Além do mais, também pode ser usado como um mixin.</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"clearfix"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Mixin itself</span>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// O mixin, em si.</span>
 <span class="k">@mixin</span> <span class="nf">clearfix</span><span class="p">()</span> <span class="p">{</span>
   <span class="err">&amp;</span><span class="p">:</span><span class="o">:</span><span class="n">after</span> <span class="p">{</span>
     <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
@@ -407,22 +407,22 @@
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="c1">// Usage as a mixin</span>
+<span class="c1">// Como usar o mixin.</span>
 <span class="nc">.element</span> <span class="p">{</span>
   <span class="k">@include</span> <span class="nd">clearfix</span><span class="p">;</span>
 <span class="p">}</span></code></pre></figure>
 
-<p>The following example shows how the clearfix can be used. Without the clearfix the wrapping div would not span around the buttons which would cause a broken layout.</p>
+<p>O exemplo a seguir mostra como o clearfix pode ser usado. Sem ele, a div envoltando não se expandiria ao redor dos botões, oquê causaria um layout quebrado.</p>
 
 <div class="bd-example">
 <div class="bg-info clearfix">
-  <button type="button" class="btn btn-secondary float-left">Example Button floated left</button>
-  <button type="button" class="btn btn-secondary float-right">Example Button floated right</button>
+  <button type="button" class="btn btn-secondary float-left">Exemplo de botão flutuando à esquerda</button>
+  <button type="button" class="btn btn-secondary float-right">Exemplo de botão flutuando à direita</button>
 </div>
 </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-info clearfix"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary float-left"</span><span class="nt">&gt;</span>Example Button floated left<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary float-right"</span><span class="nt">&gt;</span>Example Button floated right<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary float-left"</span><span class="nt">&gt;</span>Exemplo de botão flutuando à esquerda<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary float-right"</span><span class="nt">&gt;</span>Exemplo de botão flutuando à direita<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 

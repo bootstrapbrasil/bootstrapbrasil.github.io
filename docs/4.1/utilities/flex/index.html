@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.">
+<meta name="description" content="Rapidamente, gerencie o layout, alinhamento, dimensão da grade de colunas, navegação, componentes e muito mais, utilizando todo um conjunto de utilitários flexbox. No entanto, para implementações mais complexas, CSS customizado pode ser necessário.">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Jekyll v3.7.3">
 
-<title>Flex · Bootstrap em Português</title>
+<title>Flexbox · Bootstrap em Português</title>
 
 <!-- Bootstrap core CSS -->
 
@@ -35,14 +35,14 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@getbootstrap">
 <meta name="twitter:creator" content="@getbootstrap">
-<meta name="twitter:title" content="Flex">
-<meta name="twitter:description" content="Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.">
+<meta name="twitter:title" content="Flexbox">
+<meta name="twitter:description" content="Rapidamente, gerencie o layout, alinhamento, dimensão da grade de colunas, navegação, componentes e muito mais, utilizando todo um conjunto de utilitários flexbox. No entanto, para implementações mais complexas, CSS customizado pode ser necessário.">
 <meta name="twitter:image" content="http://getbootstrap.com.br/assets/brand/bootstrap-social-logo.png">
 
 <!-- Facebook -->
 <meta property="og:url" content="http://getbootstrap.com.br/docs/4.1/utilities/flex/">
-<meta property="og:title" content="Flex">
-<meta property="og:description" content="Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.">
+<meta property="og:title" content="Flexbox">
+<meta property="og:description" content="Rapidamente, gerencie o layout, alinhamento, dimensão da grade de colunas, navegação, componentes e muito mais, utilizando todo um conjunto de utilitários flexbox. No entanto, para implementações mais complexas, CSS customizado pode ser necessário.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="http://getbootstrap.com.br/assets/brand/bootstrap-social.png">
 <meta property="og:image:secure_url" content="http://getbootstrap.com.br/assets/brand/bootstrap-social.png">
@@ -385,45 +385,45 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#enable-flex-behaviors">Enable flex behaviors</a></li>
-<li class="toc-entry toc-h2"><a href="#direction">Direction</a></li>
-<li class="toc-entry toc-h2"><a href="#justify-content">Justify content</a></li>
+<li class="toc-entry toc-h2"><a href="#ative-o-comportamento-flexbox">Ative o comportamento flexbox</a></li>
+<li class="toc-entry toc-h2"><a href="#direção">Direção</a></li>
+<li class="toc-entry toc-h2"><a href="#conteúdo-justificado">Conteúdo justificado</a></li>
 <li class="toc-entry toc-h2"><a href="#align-items">Align items</a></li>
 <li class="toc-entry toc-h2"><a href="#align-self">Align self</a></li>
-<li class="toc-entry toc-h2"><a href="#fill">Fill</a></li>
-<li class="toc-entry toc-h2"><a href="#grow-and-shrink">Grow and shrink</a></li>
-<li class="toc-entry toc-h2"><a href="#auto-margins">Auto margins</a>
+<li class="toc-entry toc-h2"><a href="#preenchimento">Preenchimento</a></li>
+<li class="toc-entry toc-h2"><a href="#grow-e-shrink">Grow e shrink</a></li>
+<li class="toc-entry toc-h2"><a href="#margens-automáticas">Margens automáticas</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#with-align-items">With align-items</a></li>
+<li class="toc-entry toc-h3"><a href="#com-align-items">Com align-items</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#wrap">Wrap</a></li>
-<li class="toc-entry toc-h2"><a href="#order">Order</a></li>
+<li class="toc-entry toc-h2"><a href="#quebra">Quebra</a></li>
+<li class="toc-entry toc-h2"><a href="#ordem">Ordem</a></li>
 <li class="toc-entry toc-h2"><a href="#align-content">Align content</a></li>
 </ul>
           </div>
         
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
-          <h1 class="bd-title" id="content">Flex</h1>
-          <p class="bd-lead">Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.</p>
+          <h1 class="bd-title" id="content">Flexbox</h1>
+          <p class="bd-lead">Rapidamente, gerencie o layout, alinhamento, dimensão da grade de colunas, navegação, componentes e muito mais, utilizando todo um conjunto de utilitários flexbox. No entanto, para implementações mais complexas, CSS customizado pode ser necessário.</p>
           <!-- <script async src="https://cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=getbootstrapcom" id="_carbonads_js"></script> -->
 
-          <h2 id="enable-flex-behaviors">Enable flex behaviors</h2>
+          <h2 id="ative-o-comportamento-flexbox">Ative o comportamento flexbox</h2>
 
-<p>Apply <code class="highlighter-rouge">display</code> utilities to create a flexbox container and transform <strong>direct children elements</strong> into flex items. Flex containers and items are able to be modified further with additional flex properties.</p>
-
-<div class="bd-example">
-<div class="d-flex p-2 bd-highlight">I'm a flexbox container!</div>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex p-2 bd-highlight"</span><span class="nt">&gt;</span>I'm a flexbox container!<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<p>Use utilitários <code class="highlighter-rouge">display</code> para criar um container flexbox e transformar <strong>elementos filhos diretos</strong> em flex items. Depois, flex containers e items são capazes de serem modificados com propriedades flex adicionais.</p>
 
 <div class="bd-example">
-<div class="d-inline-flex p-2 bd-highlight">I'm an inline flexbox container!</div>
+<div class="d-flex p-2 bd-highlight">Eu sou um flex container!</div>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-flex p-2 bd-highlight"</span><span class="nt">&gt;</span>I'm an inline flexbox container!<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex p-2 bd-highlight"</span><span class="nt">&gt;</span>Eu sou um flex container!<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>Responsive variations also exist for <code class="highlighter-rouge">.d-flex</code> and <code class="highlighter-rouge">.d-inline-flex</code>.</p>
+<div class="bd-example">
+<div class="d-inline-flex p-2 bd-highlight">Eu sou um flex container inline!</div>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-flex p-2 bd-highlight"</span><span class="nt">&gt;</span>Eu sou um flex container inline!<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>Variações responsivas também existem para <code class="highlighter-rouge">.d-flex</code> e <code class="highlighter-rouge">.d-inline-flex</code>.</p>
 
 <ul>
   <li><code class="highlighter-rouge">.d-flex</code></li>
@@ -438,11 +438,11 @@
   <li><code class="highlighter-rouge">.d-xl-inline-flex</code></li>
 </ul>
 
-<h2 id="direction">Direction</h2>
+<h2 id="direção">Direção</h2>
 
-<p>Set the direction of flex items in a flex container with direction utilities. In most cases you can omit the horizontal class here as the browser default is <code class="highlighter-rouge">row</code>. However, you may encounter situations where you needed to explicitly set this value (like responsive layouts).</p>
+<p>Defina a direção dos flex items, em um flex container, com os utilitários de direção. Na maioria dos casos, você poderá omitir a classe horizontal, já que o padrão dos browsers é <code class="highlighter-rouge">row</code>. Contudo, poderás encontrar situações onde precisará, explicitamente, definir este valor (como nos layouts responsivos).</p>
 
-<p>Use <code class="highlighter-rouge">.flex-row</code> to set a horizontal direction (the browser default), or <code class="highlighter-rouge">.flex-row-reverse</code> to start the horizontal direction from the opposite side.</p>
+<p>Use <code class="highlighter-rouge">.flex-row</code> para definir uma direção horizontal (o padrão do browser) ou <code class="highlighter-rouge">.flex-row-reverse</code> para iniciar a direção horizontal, só que começando do lado oposto.</p>
 
 <div class="bd-example">
 <div class="d-flex flex-row bd-highlight mb-3">
@@ -467,7 +467,7 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item 3<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>Use <code class="highlighter-rouge">.flex-column</code> to set a vertical direction, or <code class="highlighter-rouge">.flex-column-reverse</code>  to start the vertical direction from the opposite side.</p>
+<p>Use <code class="highlighter-rouge">flex-column</code> para definir uma direção vertical ou <code class="highlighter-rouge">flex-column-reverse</code> para iniciar a direção vertical no lado oposto.</p>
 
 <div class="bd-example">
 <div class="d-flex flex-column bd-highlight mb-3">
@@ -492,7 +492,7 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item 3<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>Responsive variations also exist for <code class="highlighter-rouge">flex-direction</code>.</p>
+<p>Variações responsivas também existem para <code class="highlighter-rouge">flex-direction</code>.</p>
 
 <ul>
   <li><code class="highlighter-rouge">.flex-row</code></li>
@@ -517,9 +517,9 @@
   <li><code class="highlighter-rouge">.flex-xl-column-reverse</code></li>
 </ul>
 
-<h2 id="justify-content">Justify content</h2>
+<h2 id="conteúdo-justificado">Conteúdo justificado</h2>
 
-<p>Use <code class="highlighter-rouge">justify-content</code> utilities on flexbox containers to change the alignment of flex items on the main axis (the x-axis to start, y-axis if <code class="highlighter-rouge">flex-direction: column</code>). Choose from <code class="highlighter-rouge">start</code> (browser default), <code class="highlighter-rouge">end</code>, <code class="highlighter-rouge">center</code>, <code class="highlighter-rouge">between</code>, or <code class="highlighter-rouge">around</code>.</p>
+<p>Use utilitários <code class="highlighter-rouge">justify-content</code> nos flex containers para alterar o alinhamento dos flex items, no eixo principal (eixo x quando usando a classe start ou eixo y quando usando a classe end). Escolha entre <code class="highlighter-rouge">start</code> (padrão do browser), <code class="highlighter-rouge">end</code>, <code class="highlighter-rouge">center</code>, <code class="highlighter-rouge">between</code> ou <code class="highlighter-rouge">around</code>.</p>
 
 <div class="bd-example">
   <div class="d-flex justify-content-start bd-highlight mb-3">
@@ -555,7 +555,7 @@
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex justify-content-between"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex justify-content-around"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>Responsive variations also exist for <code class="highlighter-rouge">justify-content</code>.</p>
+<p>Variações responsivas também estão presentes na classe <code class="highlighter-rouge">justify-content</code>.</p>
 
 <ul>
   <li><code class="highlighter-rouge">.justify-content-start</code></li>
@@ -587,7 +587,7 @@
 
 <h2 id="align-items">Align items</h2>
 
-<p>Use <code class="highlighter-rouge">align-items</code> utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if <code class="highlighter-rouge">flex-direction: column</code>). Choose from <code class="highlighter-rouge">start</code>, <code class="highlighter-rouge">end</code>, <code class="highlighter-rouge">center</code>, <code class="highlighter-rouge">baseline</code>, or <code class="highlighter-rouge">stretch</code> (browser default).</p>
+<p>Use utilitários <code class="highlighter-rouge">align-items</code> em flex containers para mudar o alinhamento dos flex items, no eixo transversal (eixo y quando usando a classe start ou eixo x quando utilizar <code class="highlighter-rouge">flex-direction: column</code>). Você pode escolher entre <code class="highlighter-rouge">start</code>, <code class="highlighter-rouge">end</code>, <code class="highlighter-rouge">center</code>, <code class="highlighter-rouge">baseline</code> ou <code class="highlighter-rouge">stretch</code> (padrão de browsers).</p>
 
 <div class="bd-example">
   <div class="d-flex align-items-start bd-highlight mb-3" style="height: 100px">
@@ -623,7 +623,7 @@
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-items-baseline"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-items-stretch"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>Responsive variations also exist for <code class="highlighter-rouge">align-items</code>.</p>
+<p>Variações responsivas também estão presentes para <code class="highlighter-rouge">align-items</code>.</p>
 
 <ul>
   <li><code class="highlighter-rouge">.align-items-start</code></li>
@@ -655,43 +655,43 @@
 
 <h2 id="align-self">Align self</h2>
 
-<p>Use <code class="highlighter-rouge">align-self</code> utilities on flexbox items to individually change their alignment on the cross axis (the y-axis to start, x-axis if <code class="highlighter-rouge">flex-direction: column</code>). Choose from the same options as <code class="highlighter-rouge">align-items</code>: <code class="highlighter-rouge">start</code>, <code class="highlighter-rouge">end</code>, <code class="highlighter-rouge">center</code>, <code class="highlighter-rouge">baseline</code>, or <code class="highlighter-rouge">stretch</code> (browser default).</p>
+<p>Use utilitários <code class="highlighter-rouge">align-self</code> em flex items para, individualmente, alterar seus alinhamentos no eixo transversal (eixo y quando usando a classe start ou eixo x quando utilizar <code class="highlighter-rouge">flex-direction: column</code>). Poderás escolher das mesmas opções que o <code class="highlighter-rouge">align-item</code>: <code class="highlighter-rouge">start</code>, <code class="highlighter-rouge">end</code>, <code class="highlighter-rouge">center</code>, <code class="highlighter-rouge">baseline</code> ou <code class="highlighter-rouge">stretch</code> (padrão de browsers).</p>
 
 <div class="bd-example">
   <div class="d-flex bd-highlight mb-3" style="height: 100px">
     <div class="p-2 bd-highlight">Flex item</div>
-    <div class="align-self-start p-2 bd-highlight">Aligned flex item</div>
+    <div class="align-self-start p-2 bd-highlight">Flex item alinhado</div>
     <div class="p-2 bd-highlight">Flex item</div>
   </div>
   <div class="d-flex bd-highlight mb-3" style="height: 100px">
     <div class="p-2 bd-highlight">Flex item</div>
-    <div class="align-self-end p-2 bd-highlight">Aligned flex item</div>
+    <div class="align-self-end p-2 bd-highlight">Flex item alinhado</div>
     <div class="p-2 bd-highlight">Flex item</div>
   </div>
   <div class="d-flex bd-highlight mb-3" style="height: 100px">
     <div class="p-2 bd-highlight">Flex item</div>
-    <div class="align-self-center p-2 bd-highlight">Aligned flex item</div>
+    <div class="align-self-center p-2 bd-highlight">Flex item alinhado</div>
     <div class="p-2 bd-highlight">Flex item</div>
   </div>
   <div class="d-flex bd-highlight mb-3" style="height: 100px">
     <div class="p-2 bd-highlight">Flex item</div>
-    <div class="align-self-baseline p-2 bd-highlight">Aligned flex item</div>
+    <div class="align-self-baseline p-2 bd-highlight">Flex item alinhado</div>
     <div class="p-2 bd-highlight">Flex item</div>
   </div>
   <div class="d-flex bd-highlight" style="height: 100px">
     <div class="p-2 bd-highlight">Flex item</div>
-    <div class="align-self-stretch p-2 bd-highlight">Aligned flex item</div>
+    <div class="align-self-stretch p-2 bd-highlight">Flex item alinhado</div>
     <div class="p-2 bd-highlight">Flex item</div>
   </div>
 </div>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"align-self-start"</span><span class="nt">&gt;</span>Aligned flex item<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"align-self-end"</span><span class="nt">&gt;</span>Aligned flex item<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"align-self-center"</span><span class="nt">&gt;</span>Aligned flex item<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"align-self-baseline"</span><span class="nt">&gt;</span>Aligned flex item<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"align-self-stretch"</span><span class="nt">&gt;</span>Aligned flex item<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"align-self-start"</span><span class="nt">&gt;</span>Flex item alinhado<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"align-self-end"</span><span class="nt">&gt;</span>Flex item alinhado<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"align-self-center"</span><span class="nt">&gt;</span>Flex item alinhado<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"align-self-baseline"</span><span class="nt">&gt;</span>Flex item alinhado<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"align-self-stretch"</span><span class="nt">&gt;</span>Flex item alinhado<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>Responsive variations also exist for <code class="highlighter-rouge">align-self</code>.</p>
+<p>Variações responsivas também existem para <code class="highlighter-rouge">align-self</code>.</p>
 
 <ul>
   <li><code class="highlighter-rouge">.align-self-start</code></li>
@@ -721,9 +721,9 @@
   <li><code class="highlighter-rouge">.align-self-xl-stretch</code></li>
 </ul>
 
-<h2 id="fill">Fill</h2>
+<h2 id="preenchimento">Preenchimento</h2>
 
-<p>Use the <code class="highlighter-rouge">.flex-fill</code> class on a series of sibling elements to force them into equal widths while taking up all available horizontal space. <a href="/docs/4.1/components/navs/#working-with-flex-utilities">Especially useful for equal-width, or justified, navigation.</a></p>
+<p>Utilize a classe <code class="highlighter-rouge">.flex-fill</code> em uma série de elementos irmãos, para forçá-los a terem larguras idênticas, de modo que usem todo o espaço horizontal disponível. <a href="/docs/4.1/components/navs/#working-with-flex-utilities">Muito útil para navegação com largura igual ou justificada.</a></p>
 
 <div class="bd-example">
 <div class="d-flex bd-highlight">
@@ -738,7 +738,7 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 flex-fill bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>Responsive variations also exist for <code class="highlighter-rouge">flex-fill</code>.</p>
+<p>Variações responsivas também existem para <code class="highlighter-rouge">flex-fill</code>.</p>
 
 <ul>
   <li><code class="highlighter-rouge">.flex-fill</code></li>
@@ -748,9 +748,9 @@
   <li><code class="highlighter-rouge">.flex-xl-fill</code></li>
 </ul>
 
-<h2 id="grow-and-shrink">Grow and shrink</h2>
+<h2 id="grow-e-shrink">Grow e shrink</h2>
 
-<p>Use <code class="highlighter-rouge">.flex-grow-*</code> utilities to toggle a flex item’s ability to grow to fill available space. In the example below, the <code class="highlighter-rouge">.flex-grow-1</code> elements uses all available space it can, while allowing the remaining two flex items their necessary space.</p>
+<p>Use utilitários <code class="highlighter-rouge">flex-grow</code> para alternar a habilidade de um flex item de extender-se para ocupar todo o espaço disponível. No exemplo abaixo, os elementos <code class="highlighter-rouge">flex-grow-1</code> usam todo o espaço disponível que podem, enquanto os restantes flex items usam só o necessário.</p>
 
 <div class="bd-example">
 <div class="d-flex bd-highlight">
@@ -765,7 +765,7 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 bd-highlight"</span><span class="nt">&gt;</span>Third flex item<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>Use <code class="highlighter-rouge">.flex-shrink-*</code> utilities to toggle a flex item’s ability to shrink if necessary. In the example below, the second flex item with <code class="highlighter-rouge">.flex-shrink-1</code> is forced to wrap it’s contents to a new line, “shrinking” to allow more space for the previous flex item with <code class="highlighter-rouge">.w-100</code>.</p>
+<p>Utilize utilitários <code class="highlighter-rouge">.flex-shrink-*</code> para alternar a habilidade de um flex item de se encolher, quando necessário. No exemplo abaixo, o segundo flex item com <code class="highlighter-rouge">.flex-shrink-1</code> é forçado a quebrar sua linha, para dar mais espaço ao elemento anterior que possui <code class="highlighter-rouge">w-100</code>.</p>
 
 <div class="bd-example">
 <div class="d-flex bd-highlight">
@@ -778,7 +778,7 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2 flex-shrink-1 bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>Responsive variations also exist for <code class="highlighter-rouge">flex-grow</code> and <code class="highlighter-rouge">flex-shrink</code>.</p>
+<p>Variações responsivas também existem para <code class="highlighter-rouge">flex-grow</code> e <code class="highlighter-rouge">flex-shrink</code>.</p>
 
 <ul>
   <li><code class="highlighter-rouge">.flex-{grow|shrink}-0</code></li>
@@ -793,11 +793,11 @@
   <li><code class="highlighter-rouge">.flex-xl-{grow|shrink}-1</code></li>
 </ul>
 
-<h2 id="auto-margins">Auto margins</h2>
+<h2 id="margens-automáticas">Margens automáticas</h2>
 
-<p>Flexbox can do some pretty awesome things when you mix flex alignments with auto margins. Shown below are three examples of controlling flex items via auto margins: default (no auto margin), pushing two items to the right (<code class="highlighter-rouge">.mr-auto</code>), and pushing two items to the left (<code class="highlighter-rouge">.ml-auto</code>).</p>
+<p>Flexbox pode fazer algumas coisas muito legais, quando misturamos alinhamentos flex e margens automáticas. Abaixo, é exibido três exemplos de como controlar flex items usando margens automáticas: default (sem margens automáticas), empurrando dois items à direita (<code class="highlighter-rouge">.mr-auto</code>) e empurrando dois items a esquerda (<code class="highlighter-rouge">.ml-auto</code>).</p>
 
-<p><strong>Unfortunately, IE10 and IE11 do not properly support auto margins on flex items whose parent has a non-default <code class="highlighter-rouge">justify-content</code> value.</strong> <a href="https://stackoverflow.com/a/37535548">See this StackOverflow answer</a> for more details.</p>
+<p><strong>Infelizmente, IE10 e IE11 não suportam margens automáticas, adequadamente, em flex items que o pai possui um valor <code class="highlighter-rouge">justify-content</code> não padrão.</strong> <a href="https://stackoverflow.com/a/37535548">Veja este tópico, no StackOverflow,</a> para mais detalhes.</p>
 
 <div class="bd-example">
 <div class="d-flex bd-highlight mb-3">
@@ -836,9 +836,9 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ml-auto p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<h3 id="with-align-items">With align-items</h3>
+<h3 id="com-align-items">Com align-items</h3>
 
-<p>Vertically move one flex item to the top or bottom of a container by mixing <code class="highlighter-rouge">align-items</code>, <code class="highlighter-rouge">flex-direction: column</code>, and <code class="highlighter-rouge">margin-top: auto</code> or <code class="highlighter-rouge">margin-bottom: auto</code>.</p>
+<p>Verticalmente, mova um flex item para a parte superior ou inferior de um container, combinando <code class="highlighter-rouge">align-items</code>, <code class="highlighter-rouge">flex-direction: column</code> e <code class="highlighter-rouge">margin-top: auto</code> ou <code class="highlighter-rouge">margin-bottom: auto</code>.</p>
 
 <div class="bd-example">
 <div class="d-flex align-items-start flex-column bd-highlight mb-3" style="height: 200px;">
@@ -865,9 +865,9 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mt-auto p-2 bd-highlight"</span><span class="nt">&gt;</span>Flex item<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<h2 id="wrap">Wrap</h2>
+<h2 id="quebra">Quebra</h2>
 
-<p>Change how flex items wrap in a flex container. Choose from no wrapping at all (the browser default) with <code class="highlighter-rouge">.flex-nowrap</code>, wrapping with <code class="highlighter-rouge">.flex-wrap</code>, or reverse wrapping with <code class="highlighter-rouge">.flex-wrap-reverse</code>.</p>
+<p>Altere como os flex items quebrarão, em um flex container. Escolha entre nunca quebrar (padrão do browser), quebrar e quebra reversa. Isso tudo usando <code class="highlighter-rouge">.flex-nowrap</code>, <code class="highlighter-rouge">.flex-wrap</code> ou <code class="highlighter-rouge">flex-wrap-reverse</code>, respectivamente.</p>
 
 <div class="bd-example">
   <div class="d-flex flex-nowrap bd-highlight" style="width: 8rem;">
@@ -931,7 +931,7 @@
   ...
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>Responsive variations also exist for <code class="highlighter-rouge">flex-wrap</code>.</p>
+<p>Variações responsivas também existem para <code class="highlighter-rouge">flex-wrap</code>.</p>
 
 <ul>
   <li><code class="highlighter-rouge">.flex-nowrap</code></li>
@@ -951,24 +951,24 @@
   <li><code class="highlighter-rouge">.flex-xl-wrap-reverse</code></li>
 </ul>
 
-<h2 id="order">Order</h2>
+<h2 id="ordem">Ordem</h2>
 
-<p>Change the <em>visual</em> order of specific flex items with a handful of <code class="highlighter-rouge">order</code> utilities. We only provide options for making an item first or last, as well as a reset to use the DOM order. As <code class="highlighter-rouge">order</code> takes any integer value (e.g., <code class="highlighter-rouge">5</code>), add custom CSS for any additional values needed.</p>
+<p>Mude a ordem <em>visual</em> de flex items específicos, com um punhado de utilitários <code class="highlighter-rouge">order</code>. Nós, apenas, provemos opções para fazer um item ser o primeiro ou último, assim como um reset para usar a ordem do DOM. Como os utilitários <code class="highlighter-rouge">order</code> usam um número inteiro (<code class="highlighter-rouge">5</code>, por exemplo), use um CSS personalizado para criar valores adicionais, se necessário.</p>
 
 <div class="bd-example">
 <div class="d-flex flex-nowrap bd-highlight">
-  <div class="order-3 p-2 bd-highlight">First flex item</div>
-  <div class="order-2 p-2 bd-highlight">Second flex item</div>
-  <div class="order-1 p-2 bd-highlight">Third flex item</div>
+  <div class="order-3 p-2 bd-highlight">Primeiro flex item</div>
+  <div class="order-2 p-2 bd-highlight">Segundo flex item</div>
+  <div class="order-1 p-2 bd-highlight">Terceiro flex item</div>
 </div>
 </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex flex-nowrap bd-highlight"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"order-3 p-2 bd-highlight"</span><span class="nt">&gt;</span>First flex item<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"order-2 p-2 bd-highlight"</span><span class="nt">&gt;</span>Second flex item<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"order-1 p-2 bd-highlight"</span><span class="nt">&gt;</span>Third flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"order-3 p-2 bd-highlight"</span><span class="nt">&gt;</span>Primeiro flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"order-2 p-2 bd-highlight"</span><span class="nt">&gt;</span>Segundo flex item<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"order-1 p-2 bd-highlight"</span><span class="nt">&gt;</span>Terceiro flex item<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>Responsive variations also exist for <code class="highlighter-rouge">order</code>.</p>
+<p>Variações responsivas também existem para <code class="highlighter-rouge">order</code>.</p>
 
 <ul>
   <li><code class="highlighter-rouge">.order-0</code></li>
@@ -1040,9 +1040,9 @@
 
 <h2 id="align-content">Align content</h2>
 
-<p>Use <code class="highlighter-rouge">align-content</code> utilities on flexbox containers to align flex items <em>together</em> on the cross axis. Choose from <code class="highlighter-rouge">start</code> (browser default), <code class="highlighter-rouge">end</code>, <code class="highlighter-rouge">center</code>, <code class="highlighter-rouge">between</code>, <code class="highlighter-rouge">around</code>, or <code class="highlighter-rouge">stretch</code>. To demonstrate these utilities, we’ve enforced <code class="highlighter-rouge">flex-wrap: wrap</code> and increased the number of flex items.</p>
+<p>Use utilitários <code class="highlighter-rouge">align-content</code> em flex containers para alinhar todos os flex items ao mesmo tempo, no eixo transversal. Você pode escolher entre <code class="highlighter-rouge">start</code> (padrão dos browsers), <code class="highlighter-rouge">end</code>, <code class="highlighter-rouge">center</code>, <code class="highlighter-rouge">between</code>, <code class="highlighter-rouge">around</code> ou <code class="highlighter-rouge">stretch</code>. Para demonstrar estes utilitários, nós utilizamos <code class="highlighter-rouge">flex-wrap: wrap</code> e aumentamos a quantidade de flex items.</p>
 
-<p><strong>Heads up!</strong> This property has no effect on single rows of flex items.</p>
+<p><strong>Atenção!</strong> Esta propriedade não faz efeito em linhas únicas de flex items.</p>
 
 <div class="bd-example">
   <div class="d-flex align-content-start flex-wrap bd-highlight mb-3" style="height: 200px">
@@ -1178,7 +1178,7 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-content-stretch flex-wrap"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>Responsive variations also exist for <code class="highlighter-rouge">align-content</code>.</p>
+<p>Variações responsivas também existem para <code class="highlighter-rouge">align-content</code>.</p>
 
 <ul>
   <li><code class="highlighter-rouge">.align-content-start</code></li>
