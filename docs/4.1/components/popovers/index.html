@@ -5,29 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="Documentação e exemplos para criar popovers Bootstrap (igual aqueles do iOS), em qualquer elemento do seu site.">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-<meta name="generator" content="Jekyll v3.7.3">
+<meta name="generator" content="Jekyll v3.8.3">
 
 <title>Popovers · Bootstrap em Português</title>
 
 <!-- Bootstrap core CSS -->
 
-<link href="/dist/css/bootstrap.css" rel="stylesheet">
+<link href="/docs/4.1/dist/css/bootstrap.css" rel="stylesheet">
 
 
 <!-- Documentation extras -->
 
 <link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
 
-<link href="/assets/css/docs.min.css" rel="stylesheet">
+<link href="/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
 
 <!-- Favicons -->
-<link rel="apple-touch-icon" href="/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="apple-touch-icon" href="/docs/4.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.1/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.1/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
 <link rel="icon" href="/favicon.ico">
-<meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+<meta name="msapplication-config" content="/docs/4.1/assets/img/favicons/browserconfig.xml">
 <meta name="theme-color" content="#563d7c">
 
 
@@ -37,15 +37,15 @@
 <meta name="twitter:creator" content="@getbootstrap">
 <meta name="twitter:title" content="Popovers">
 <meta name="twitter:description" content="Documentação e exemplos para criar popovers Bootstrap (igual aqueles do iOS), em qualquer elemento do seu site.">
-<meta name="twitter:image" content="http://getbootstrap.com.br/assets/brand/bootstrap-social-logo.png">
+<meta name="twitter:image" content="http://getbootstrap.com.br/docs/4.1/assets/brand/bootstrap-social-logo.png">
 
 <!-- Facebook -->
 <meta property="og:url" content="http://getbootstrap.com.br/docs/4.1/components/popovers/">
 <meta property="og:title" content="Popovers">
 <meta property="og:description" content="Documentação e exemplos para criar popovers Bootstrap (igual aqueles do iOS), em qualquer elemento do seu site.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="http://getbootstrap.com.br/assets/brand/bootstrap-social.png">
-<meta property="og:image:secure_url" content="http://getbootstrap.com.br/assets/brand/bootstrap-social.png">
+<meta property="og:image" content="http://getbootstrap.com.br/docs/4.1/assets/brand/bootstrap-social.png">
+<meta property="og:image:secure_url" content="http://getbootstrap.com.br/docs/4.1/assets/brand/bootstrap-social.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -59,6 +59,7 @@
   ga('create', 'UA-61016077-1', 'auto');
   ga('send', 'pageview');
 </script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
   </head>
   <body>
@@ -128,7 +129,7 @@
     </li>
   </ul>
 
-  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="https://github.com/twbs/bootstrap/archive/v4.1.0.zip">Baixar</a>
+  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="/docs/4.1/getting-started/download/">Baixar</a>
 </header>
 
 
@@ -136,7 +137,7 @@
       <div class="row flex-xl-nowrap">
         <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
           <form class="bd-search d-flex align-items-center">
-  <input type="search" class="form-control" id="search-input" placeholder="Pesquisar..." aria-label="Pesquisar por..." autocomplete="off" data-siteurl="http://getbootstrap.com.br">
+  <input type="search" class="form-control" id="search-input" placeholder="Pesquisar..." aria-label="Pesquisar por..." autocomplete="off" data-siteurl="http://getbootstrap.com.br" data-docs-version="4.1">
   <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Alternar navegação da documentação"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
 </button>
 </form>
@@ -430,18 +431,14 @@
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">Popovers</h1>
           <p class="bd-lead">Documentação e exemplos para criar popovers Bootstrap (igual aqueles do iOS), em qualquer elemento do seu site.</p>
-          <!-- <script async src="https://cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=getbootstrapcom" id="_carbonads_js"></script> -->
+          <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom" id="_carbonads_js"></script>
 
           <h2 id="visão-geral">Visão geral</h2>
 
 <p>Coisas para saber, quando usando o plugin popover:</p>
 
 <ul>
-  <li>O popover depende da biblioteca externa <a href="https://popper.js.org/">Popper.js</a>, para posicionamento;
-    <ul>
-      <li>Você deve colocar <a href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">popper.min.js</a> antes de <code class="highlighter-rouge">bootstrap.js</code> ou usar <code class="highlighter-rouge">bootstrap.bundle.min.js</code> / <code class="highlighter-rouge">bootstrap.bundle.js</code>, os quais contém Popper.js para o popover funcionar.</li>
-    </ul>
-  </li>
+  <li>O popover depende da biblioteca externa <a href="https://popper.js.org/">Popper.js</a>, para posicionamento. Você deve colocar <a href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">popper.min.js</a> antes de <code class="highlighter-rouge">bootstrap.js</code> ou usar <code class="highlighter-rouge">bootstrap.bundle.min.js</code> / <code class="highlighter-rouge">bootstrap.bundle.js</code>, os quais contém Popper.js para o popover funcionar.</li>
   <li>Popovers precisam do <a href="/docs/4.1/components/tooltips/">plugin tooltip</a>, como sua dependência;</li>
   <li>Se você está montando o JavaScript a partir da fonte, vai precisar do <a href="/docs/4.1/getting-started/javascript/#util"><code class="highlighter-rouge">util.js</code></a>;</li>
   <li>Popovers são opcionais por motivos de desempenho, então, <strong>você deve inciá-lo, por conta própria</strong>;</li>
@@ -449,11 +446,7 @@
   <li>Declare <code class="highlighter-rouge">container: 'body'</code> para evitar problemas de renderização, em componentes mais complexos (como nos grupos de inputs ou botões);</li>
   <li>Acionar popovers em elementos ocultos não funciona;</li>
   <li>Popovers em elementos <code class="highlighter-rouge">.disabled</code> ou <code class="highlighter-rouge">disabled</code> devem ser acionados em um elemento pai;</li>
-  <li>Quando acionados por âncoras que envolvem várias linhas, os popovers serão centralizados entre a largura total das âncoras;
-    <ul>
-      <li>Use <code class="highlighter-rouge">white-space: nowrap;</code> em seus <code class="highlighter-rouge">&lt;a&gt;</code>, para evitar este comportamento.</li>
-    </ul>
-  </li>
+  <li>Quando acionados por âncoras que envolvem várias linhas, os popovers serão centralizados entre a largura total das âncoras. Use <code class="highlighter-rouge">white-space: nowrap;</code> em seus <code class="highlighter-rouge">&lt;a&gt;</code>, para evitar este comportamento.</li>
   <li>Popovers devem ser ocultos, antes que seus elementos correspondentes sejam removidos do DOM.</li>
 </ul>
 
@@ -628,7 +621,7 @@
       <td>selector</td>
       <td>string | false</td>
       <td>false</td>
-      <td>Se um seletor é provido, objetos popover serão delegados a alvos específicos. Na prática, isso é usado para permitir um conteúdo HTML dinâmico ter popover. Veja <a href="https://github.com/twbs/bootstrap/issues/4215">isto</a> e <a href="https://jsbin.com/zopod/1/edit">um exemplo informativo</a>.</td>
+      <td>Se um seletor é provido, objetos popover serão delegados a alvos específicos. Na prática, isso é usado para permitir um conteúdo HTML dinâmico ter popover. Veja <a href="https://github.com/twbs/bootstrap/issues/4215">isto</a> e <a href="https://codepen.io/Johann-S/pen/djJYPb">um exemplo informativo</a>.</td>
     </tr>
     <tr>
       <td>template</td>
@@ -655,7 +648,7 @@
       <td>trigger</td>
       <td>string</td>
       <td>'click'</td>
-      <td>Define como o popover é acionado (clique, hover, focus ou manual). Você pode passar vários acionadores, separando eles com espaço. No entanto, `manual` não pode ser passado com outros acionadores.</td>
+      <td>Define como o popover é acionado - clique | hover | focus | manual. Você pode passar vários acionadores, separando eles com espaço. No entanto, <code>manual</code> não pode ser passado com outros acionadores.</td>
     </tr>
     <tr>
       <td>offset</td>
@@ -791,11 +784,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 
-<script src="/assets/js/vendor/popper.min.js"></script><script src="/dist/js/bootstrap.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/assets/js/vendor/anchor.min.js"></script>
-  <script src="/assets/js/vendor/clipboard.min.js"></script>
-  <script src="/assets/js/vendor/holder.min.js"></script>
-  <script src="/assets/js/src/application.js"></script>
-  <script src="/assets/js/src/ie-emulation-modes-warning.js"></script>
-  <script src="/assets/js/src/pwa.js"></script>
+<script src="/docs/4.1/assets/js/vendor/popper.min.js"></script><script src="/docs/4.1/dist/js/bootstrap.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/docs/4.1/assets/js/vendor/anchor.min.js"></script>
+  <script src="/docs/4.1/assets/js/vendor/clipboard.min.js"></script>
+  <script src="/docs/4.1/assets/js/vendor/holder.min.js"></script>
+  <script src="/docs/4.1/assets/js/src/application.js"></script>
+  <script src="/docs/4.1/assets/js/src/search.js"></script>
+  <script src="/docs/4.1/assets/js/src/ie-emulation-modes-warning.js"></script>
+  <script src="/docs/4.1/assets/js/src/pwa.js"></script>
   </body>
 </html>
